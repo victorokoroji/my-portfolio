@@ -150,3 +150,207 @@ header a {
   color: var(--lighter-navy-blue);
   font-size: 20px;
 }
+
+.works {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.project {
+  background: var(--white);
+  border: 1px solid var(--very-light-blue);
+  border-radius: 16px;
+  margin: 50px 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--navy-blue);
+  margin: 12px 0;
+}
+
+.project-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 16px;
+}
+
+.project-author li {
+  list-style-type: none;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--gray-navy-blue);
+}
+
+.project-author li:not(:first-child)::before {
+  content: url(./assets/images/Counter.png);
+  padding-right: 10px;
+}
+
+#author-name {
+  color: var(--light-navy-blue);
+}
+
+.project-description p {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--light-navy-blue);
+  margin: 12px 0;
+}
+
+.project-tools {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 16px;
+  margin: 12px 0;
+}
+
+.project-tools li {
+  margin-top: 12px;
+  list-style-type: none;
+  margin-right: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: var(--lighter-sky-blue);
+  padding: 4px 12px;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+
+button {
+  padding: 12px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--blue);
+  margin: 12px 0;
+  background-color: var(--white);
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+button:active {
+  background-color: var(--deep-blue);
+  color: var(--white);
+}
+
+button:disabled {
+  background-color: var(--white);
+  color: var(--light-gray);
+}
+
+.about {
+  background: url(./assets/images/Base-about-myself.png) no-repeat;
+  background-size: contain;
+  object-fit: contain;
+  min-height: 1263px;
+  max-width: 375px;
+  padding: 114px 24px 0 24px;
+}
+
+.about h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--navy-blue);
+  margin: 12px 0;
+}
+
+.about p {
+  line-height: 24px;
+  color: var(--light-navy-blue);
+  flex: none;
+  margin: 12px 0;
+}
+
+.about .connect {
+  color: #7f8cff;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+.languages p::after {
+  content: url(./assets/images/Union.png);
+  float: right;
+  margin-right: 20px;
+}
+
+.frameworks p::after {
+  content: url(./assets/images/arrow-right.png);
+  float: right;
+  margin-right: 20px;
+}
+
+.skills p::after {
+  content: url(./assets/images/arrow-right.png);
+  float: right;
+  margin-right: 20px;
+}
+
+.skill-list p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.skill-list ul li {
+  background: var(--gray);
+  list-style-type: none;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--deep-navy-blue);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skill-list ul li:nth-child(2)::before {
+  content: url(./assets/images/html5.png);
+  display: inline;
+  padding: 5px 10px;
+}
+
+.skill-list ul li:nth-child(3)::before {
+  content: url(./assets/images/css3.png);
+  padding: 5px 10px;
+}
+
+.skill-list ul li:nth-child(1)::before {
+  padding: 5px 10px;
+  content: url(./assets/images/javascript.png);
+}
+
+.frameworks::after {
+  content: url(./assets/images/Separator-Bottom.png);
+}
+
+.skills::after {
+  content: url(./assets/images/Separator-Bottom.png);
+}
