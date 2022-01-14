@@ -105,10 +105,9 @@ header a {
   flex-direction: column;
   align-items: flex-start;
   min-height: 604px;
-  min-width: 375px;
   padding: 120px 20px;
-  background: url('./assets/images/header-shapes-mobile.png') 0 50px no-repeat;
-  background-size: 100% auto;
+  /* background: url('./assets/images/header-shapes-mobile.png') 0 50px no-repeat;
+  background-size: 100% auto; */
 }
 
 .intro h1 {
