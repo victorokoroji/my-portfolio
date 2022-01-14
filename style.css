@@ -61,9 +61,9 @@ img {
   object-fit: cover;
 }
 
-/* main content styling */
+/* Intro section styling starts here */
 .intro-container {
-  background-color: white;
+  background-color: var(--white);
   border-bottom-left-radius: 100px;
   min-height: 718px;
   margin-bottom: 50px;
@@ -155,6 +155,7 @@ header a {
   font-size: 20px;
 }
 
+/* works section styling starts here */
 .works {
   width: 90%;
   margin: auto;
@@ -203,7 +204,7 @@ header a {
   padding-right: 10px;
 }
 
-#author-name {
+.author-name {
   color: var(--light-navy-blue);
 }
 
@@ -265,13 +266,18 @@ button:disabled {
   color: var(--light-gray);
 }
 
+/* about section styling starts here */
 .about {
   background: url(./assets/images/Base-about-myself.png) no-repeat;
-  background-size: contain;
-  object-fit: contain;
+  background-size: cover;
   min-height: 1263px;
-  max-width: 375px;
   padding: 114px 24px 0 24px;
+  margin-top: 50px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .about h2 {
@@ -285,33 +291,65 @@ button:disabled {
 .about p {
   line-height: 24px;
   color: var(--light-navy-blue);
-  flex: none;
   margin: 12px 0;
 }
 
 .about .connect {
-  color: #7f8cff;
+  color: var(--light-sky-blue);
   font-weight: 500;
   line-height: 24px;
   margin: 0;
 }
 
+.about .socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 170.17px;
+  height: 20px;
+  margin: 16px 0;
+}
+
+.frameworks {
+  border-bottom: 1px solid var(--light-pale-blue);
+}
+
+.skills {
+  border-bottom: 1px solid var(--light-pale-blue);
+}
+
+.languages p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .languages p::after {
   content: url(./assets/images/Union.png);
-  float: right;
-  margin-right: 20px;
+}
+
+.frameworks p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .frameworks p::after {
   content: url(./assets/images/arrow-right.png);
-  float: right;
-  margin-right: 20px;
+}
+
+.skills p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .skills p::after {
   content: url(./assets/images/arrow-right.png);
-  float: right;
-  margin-right: 20px;
+}
+
+.skill-list {
+  padding-top: 50px;
 }
 
 .skill-list p {
@@ -337,7 +375,6 @@ button:disabled {
 
 .skill-list ul li:nth-child(2)::before {
   content: url(./assets/images/html5.png);
-  display: inline;
   padding: 5px 10px;
 }
 
@@ -351,10 +388,4 @@ button:disabled {
   content: url(./assets/images/javascript.png);
 }
 
-.frameworks::after {
-  content: url(./assets/images/Separator-Bottom.png);
-}
-
-.skills::after {
-  content: url(./assets/images/Separator-Bottom.png);
-}
+/* contact section styling starts here */
