@@ -14,6 +14,7 @@
   --black: #000;
   --gray: #f7f7f9;
   --deep-blue: #2230d2;
+  --light-pale-blue: #b3bac5;
 
   /* typography colors */
   --navy-blue: #172b4d;
@@ -310,12 +311,9 @@ button:disabled {
   margin: 16px 0;
 }
 
-.frameworks {
+.frameworks, .skills {
   border-bottom: 1px solid var(--light-pale-blue);
-}
-
-.skills {
-  border-bottom: 1px solid var(--light-pale-blue);
+  padding-bottom: 5px;
 }
 
 .languages p {
