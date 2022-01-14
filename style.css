@@ -66,7 +66,6 @@ img {
   background-color: white;
   border-bottom-left-radius: 100px;
   min-height: 718px;
-  min-width: 375px;
   margin-bottom: 50px;
 }
 
@@ -106,8 +105,8 @@ header a {
   align-items: flex-start;
   min-height: 604px;
   padding: 120px 20px;
-  /* background: url('./assets/images/header-shapes-mobile.png') 0 50px no-repeat;
-  background-size: 100% auto; */
+  background: url('./assets/images/header-shapes-mobile.png') 0 50px no-repeat;
+  background-size: 100% auto;
 }
 
 .intro h1 {
