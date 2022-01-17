@@ -311,22 +311,17 @@ button:disabled {
   margin: 16px 0;
 }
 
-.frameworks, .skills {
+.frameworks,
+.skills {
   border-bottom: 1px solid var(--light-pale-blue);
   padding-bottom: 5px;
-}
-
-.languages p {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 .languages p::after {
   content: url(./assets/images/Union.png);
 }
 
-.frameworks p {
+.languages p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -336,7 +331,7 @@ button:disabled {
   content: url(./assets/images/arrow-right.png);
 }
 
-.skills p {
+.frameworks p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -344,6 +339,12 @@ button:disabled {
 
 .skills p::after {
   content: url(./assets/images/arrow-right.png);
+}
+
+.skills p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .skill-list {
@@ -371,6 +372,11 @@ button:disabled {
   align-items: center;
 }
 
+.skill-list ul li:nth-child(1)::before {
+  padding: 5px 10px;
+  content: url(./assets/images/javascript.png);
+}
+
 .skill-list ul li:nth-child(2)::before {
   content: url(./assets/images/html5.png);
   padding: 5px 10px;
@@ -379,11 +385,6 @@ button:disabled {
 .skill-list ul li:nth-child(3)::before {
   content: url(./assets/images/css3.png);
   padding: 5px 10px;
-}
-
-.skill-list ul li:nth-child(1)::before {
-  padding: 5px 10px;
-  content: url(./assets/images/javascript.png);
 }
 
 /* contact section styling starts here */
