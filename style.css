@@ -14,6 +14,7 @@
   --black: #000;
   --gray: #f7f7f9;
   --deep-blue: #2230d2;
+  --light-pale-blue: #b3bac5;
 
   /* typography colors */
   --navy-blue: #172b4d;
@@ -24,12 +25,14 @@
   --deep-navy-blue: #253858;
 }
 
+/* global styling  */
 *,
 ::before,
 ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -43,22 +46,28 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--background-primary-color);
-  max-width: 375px;
 }
 
-.intro-container {
-  background: url('./assets/images/header-background-mobile.svg') no-repeat;
-  background-size: contain;
-  height: 718px;
-  object-fit: cover;
-  width: 100%;
-  max-width: 375px;
-  margin-bottom: 50px;
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+/* Intro section styling starts here */
+.intro-container {
+  background-color: var(--white);
+  border-bottom-left-radius: 100px;
+  min-height: 718px;
+  margin-bottom: 50px;
 }
 
 header {
@@ -96,20 +105,20 @@ header a {
   flex-direction: column;
   align-items: flex-start;
   min-height: 604px;
-  max-width: 375px;
-  width: 100%;
   padding: 120px 20px;
   background: url('./assets/images/header-shapes-mobile.png') 0 50px no-repeat;
-  background-size: contain;
-  object-fit: contain;
+  background-size: 100% auto;
 }
 
 .intro h1 {
-  height: 150px;
   font-size: 40px;
   line-height: 52px;
   color: var(--navy-blue);
   margin: 12px 0;
+}
+
+.intro h1 span {
+  display: block;
 }
 
 .intro p {
@@ -142,15 +151,12 @@ header a {
   margin-right: 10px;
 }
 
-.socials li a {
-  text-decoration: none;
-}
-
 .socials li a i {
   color: var(--lighter-navy-blue);
   font-size: 20px;
 }
 
+/* works section styling starts here */
 .works {
   width: 90%;
   margin: auto;
@@ -199,7 +205,7 @@ header a {
   padding-right: 10px;
 }
 
-#author-name {
+.author-name {
   color: var(--light-navy-blue);
 }
 
@@ -261,13 +267,18 @@ button:disabled {
   color: var(--light-gray);
 }
 
+/* about section styling starts here */
 .about {
   background: url(./assets/images/Base-about-myself.png) no-repeat;
-  background-size: contain;
-  object-fit: contain;
+  background-size: cover;
   min-height: 1263px;
-  max-width: 375px;
   padding: 114px 24px 0 24px;
+  margin-top: 50px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .about h2 {
@@ -281,33 +292,63 @@ button:disabled {
 .about p {
   line-height: 24px;
   color: var(--light-navy-blue);
-  flex: none;
   margin: 12px 0;
 }
 
 .about .connect {
-  color: #7f8cff;
+  color: var(--light-sky-blue);
   font-weight: 500;
   line-height: 24px;
   margin: 0;
 }
 
+.about .socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 170.17px;
+  height: 20px;
+  margin: 16px 0;
+}
+
+.frameworks,
+.skills {
+  border-bottom: 1px solid var(--light-pale-blue);
+  padding-bottom: 5px;
+}
+
 .languages p::after {
   content: url(./assets/images/Union.png);
-  float: right;
-  margin-right: 20px;
+}
+
+.languages p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .frameworks p::after {
   content: url(./assets/images/arrow-right.png);
-  float: right;
-  margin-right: 20px;
+}
+
+.frameworks p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .skills p::after {
   content: url(./assets/images/arrow-right.png);
-  float: right;
-  margin-right: 20px;
+}
+
+.skills p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.skill-list {
+  padding-top: 50px;
 }
 
 .skill-list p {
@@ -331,9 +372,13 @@ button:disabled {
   align-items: center;
 }
 
+.skill-list ul li:nth-child(1)::before {
+  padding: 5px 10px;
+  content: url(./assets/images/javascript.png);
+}
+
 .skill-list ul li:nth-child(2)::before {
   content: url(./assets/images/html5.png);
-  display: inline;
   padding: 5px 10px;
 }
 
@@ -342,15 +387,4 @@ button:disabled {
   padding: 5px 10px;
 }
 
-.skill-list ul li:nth-child(1)::before {
-  padding: 5px 10px;
-  content: url(./assets/images/javascript.png);
-}
-
-.frameworks::after {
-  content: url(./assets/images/Separator-Bottom.png);
-}
-
-.skills::after {
-  content: url(./assets/images/Separator-Bottom.png);
-}
+/* contact section styling starts here */
