@@ -101,6 +101,10 @@ header a {
 	border-radius: 8px;
 }
 
+.hamburger ul {
+	display: none;
+}
+
 .intro {
 	display: flex;
 	flex-direction: column;
@@ -481,7 +485,7 @@ form ul li textarea:focus {
 
 /* Desktop site media querry starts here */
 @media only screen and (min-width: 576px) {
-	/* intro section styling starts here */
+	
 	.intro-container {
 		background: url('./assets/images/header-background-shape-desktop.svg') no-repeat;
 		background-size: cover;
@@ -491,6 +495,24 @@ form ul li textarea:focus {
 		margin-bottom: initial;
 	}
 
+	header {
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+		margin: auto;
+		height: 72px;
+		padding-top: 16px;
+	}
+
+	header a {
+		font-size: 18px;
+		line-height: 20px;
+		color: var(--primary-color);
+		padding: 10px 12px;
+		justify-content: center;
+	}
+
+	/* hamburger-nav-bar styling starts here */
 	.hamburger ul {
 		display: flex;
 		justify-content: flex-end;
@@ -512,20 +534,46 @@ form ul li textarea:focus {
 		display: none;
 	}
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		width: 80%;
+	/* hamburger-nav-bar styling ends here */
+
+  /* intro section styling starts here */
+	.intro {
+		min-height: 721.46px;
+		width: 95%;
 		margin: auto;
-		height: 72px;
-		padding-top: 16px;
+		min-width: 375px;
+		background: url('./assets/images/header-bg.png') 0 30px no-repeat;
+		background-size: 100% 691.46px;
 	}
 
-	header a {
-		font-size: 18px;
-		line-height: 20px;
-		color: var(--primary-color);
-		padding: 10px 12px;
-		justify-content: center;
+	.intro h1 span {
+		display: inline;
 	}
+
+	.intro-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 70%;
+		margin: auto;
+		margin-top: 80px;
+	}
+
+	.intro h1 {
+		font-size: 48px;
+		line-height: 60px;
+		color: var(--navy-blue);
+		letter-spacing: 0.37px;
+		margin: 10px 0;
+	}
+
+	.intro p {
+		line-height: 28px;
+		color: var(--light-navy-blue);
+		font-size: 20px;
+		margin: 10px 0;
+	}
+
+  /* intro section styling ends here */
 }
