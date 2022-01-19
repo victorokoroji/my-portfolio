@@ -65,7 +65,7 @@ img {
 /* Intro section styling starts here */
 .intro-container {
   background-color: var(--white);
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 200px;
   min-height: 718px;
   margin-bottom: 50px;
   min-width: 375px;
@@ -271,7 +271,8 @@ button:disabled {
 
 /* about section styling starts here */
 .about {
-  background: url(./assets/images/Base-about-myself.png) no-repeat;
+  background-color: var(--white);
+  border-top-right-radius: 200px;
   background-size: cover;
   min-height: 1263px;
   padding: 114px 24px 0 24px;
@@ -394,7 +395,7 @@ button:disabled {
 .contact {
   background: url(./assets/images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
   background-color: var(--primary-color);
-  border-top-left-radius: 100px;
+  border-top-left-radius: 200px;
   background-size: auto 725px;
   object-fit: cover;
   min-height: 779px;
