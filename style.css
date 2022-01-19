@@ -478,3 +478,57 @@ form ul li textarea:focus {
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
+
+/* Desktop site media querry starts here */
+@media only screen and (min-width: 576px) {
+
+  /* intro section styling starts here */
+  .intro-container {
+    background: url('./assets/images/header-background-shape-desktop.svg') no-repeat;
+    background-size: cover;
+    height: 916px;
+    object-fit: cover;
+    min-width: 375px;
+    max-width: initial;
+    margin-bottom: initial;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 72px;
+    padding-top: 16px;
+  }
+
+  header a {
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 12px;
+    justify-content: center;
+  }
+  
+  .hamburger ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .hamburger ul li {
+    margin: 0 8px;
+  }
+
+  .hamburger ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--light-navy-blue);
+  }
+
+  .hamburger i {
+    display: none;
+  }
+}
