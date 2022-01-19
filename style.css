@@ -68,6 +68,7 @@ img {
   border-bottom-left-radius: 100px;
   min-height: 718px;
   margin-bottom: 50px;
+  min-width: 375px;
 }
 
 header {
@@ -106,6 +107,7 @@ header a {
   align-items: flex-start;
   min-height: 604px;
   padding: 120px 20px;
+  min-width: 375px;
   background: url('./assets/images/header-shapes-mobile.png') 0 50px no-repeat;
   background-size: 100% auto;
 }
@@ -161,7 +163,7 @@ header a {
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   grid-template-rows: repeat(4, 1fr);
 }
 
@@ -169,7 +171,7 @@ header a {
   background: var(--white);
   border: 1px solid var(--very-light-blue);
   border-radius: 16px;
-  margin: 50px 0;
+  margin: 50px auto;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -274,6 +276,7 @@ button:disabled {
   min-height: 1263px;
   padding: 114px 24px 0 24px;
   margin-top: 50px;
+  min-width: 375px;
 }
 
 .about-container {
@@ -388,3 +391,89 @@ button:disabled {
 }
 
 /* contact section styling starts here */
+.contact {
+  background: url(./assets/images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
+  background-color: var(--primary-color);
+  border-top-left-radius: 100px;
+  background-size: auto 725px;
+  object-fit: cover;
+  min-height: 779px;
+  min-width: 375px;
+  margin-top: -170px;
+  z-index: 2;
+}
+
+.contact h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--white);
+  padding-top: 103px;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--lighter-sky-blue);
+  padding: 20px;
+}
+
+form {
+  padding: 30px 24px 0 24px;
+}
+
+form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+form ul li input {
+  width: 100%;
+  border: 1px solid var(--pale-blue);
+  border-radius: 8px;
+  background: var(--white);
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--navy-blue);
+  padding: 15px 16px;
+  outline: none;
+}
+
+form ul li input:focus {
+  border: 2px solid var(--blue);
+}
+
+form ul li textarea {
+  background: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px 16px;
+  outline: none;
+  width: 100%;
+  height: 170px;
+  color: #b3bac5;
+  font-size: 15px;
+}
+
+form ul li textarea:focus {
+  border: 2px solid var(--blue);
+}
+
+#submit-btn {
+  padding: 12px 16px;
+  background: var(--white);
+  border-radius: 8px;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
