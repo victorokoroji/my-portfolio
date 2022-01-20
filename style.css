@@ -194,6 +194,15 @@ header a {
   height: 16px;
 }
 
+.snapshoot {
+  transition: transform 1s linear;
+}
+
+.snapshoot:hover {
+     transform: scale(1.03);
+  }
+
+
 .project-author li {
   list-style-type: none;
   margin-right: 10px;
@@ -600,10 +609,6 @@ form ul li textarea:focus {
   .project-img {
     flex: 1;
     object-fit: contain;
-  }
-
-  .snapshoot {
-    
   }
 
   .order .project-img {
