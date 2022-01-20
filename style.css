@@ -480,6 +480,12 @@ form ul li textarea:focus {
   color: var(--primary-color);
 }
 
+#submit-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border:1px solid var(--white)
+}
+
 .hamburger ul {
   display: none;
 }
@@ -594,6 +600,10 @@ form ul li textarea:focus {
   .project-img {
     flex: 1;
     object-fit: contain;
+  }
+
+  .snapshoot {
+    
   }
 
   .order .project-img {
