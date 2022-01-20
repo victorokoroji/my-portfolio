@@ -693,4 +693,60 @@ form ul li textarea:focus {
 		padding: 0;
 		width: 100%;
 	}
+
+	.contact {
+		background: url(./assets/images/contact-form-background-shapes.png) 0 79px no-repeat,
+			url(./assets/images/contact-form-background-shape-desktop.svg) no-repeat;
+		background-size: 100% 632.79px, cover;
+		min-height: 718.7px;
+		min-width: 375px;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.contact p {
+		width: 569px;
+	}
+
+	form {
+		padding: 30px 24px 0 24px;
+	}
+
+	form ul li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	form ul li input {
+		width: 447px;
+		border-radius: 2px;
+	}
+
+	form ul li input:focus {
+		border: 2px solid var(--blue);
+	}
+
+	form ul li textarea {
+		border-radius: 2px;
+	}
+
+	form ul li textarea:focus {
+		border: 2px solid var(--blue);
+	}
+
+	#submit-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		margin-top: 27px;
+		margin-bottom: 127px;
+	}
+	form ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
