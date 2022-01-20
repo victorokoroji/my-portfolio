@@ -15,6 +15,7 @@
   --gray: #f7f7f9;
   --deep-blue: #2230d2;
   --light-pale-blue: #b3bac5;
+  --very-lighter-blue: #4053fc3d;
 
   /* typography colors */
   --navy-blue: #172b4d;
@@ -278,6 +279,7 @@ button {
 button:hover {
   background-color: var(--primary-color);
   color: var(--white);
+  box-shadow: 0 8px 16px 0 var(--very-lighter-blue);
 }
 
 button:active {
