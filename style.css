@@ -46,6 +46,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--background-primary-color);
+  overflow-x: hidden;
 }
 
 a {
@@ -80,7 +81,7 @@ header {
   padding-top: 44px;
 }
 
-header a {
+.logo {
   font-weight: bold;
   display: block;
   font-size: 18px;
@@ -91,14 +92,15 @@ header a {
 }
 
 @keyframes rotate {
-  from{
+  from {
     transform: rotate(0);
-
   }
-  to{
+
+  to {
     transform: rotate(360deg);
   }
 }
+
 .hamburger {
   display: flex;
   justify-content: flex-end;
@@ -209,9 +211,8 @@ header a {
 }
 
 .snapshoot:hover {
-     transform: scale(1.03);
-  }
-
+  transform: scale(1.03);
+}
 
 .project-author li {
   list-style-type: none;
@@ -445,6 +446,7 @@ button:disabled {
 .contact p:hover {
   transform: translateX(10px);
 }
+
 form {
   padding: 30px 24px 0 24px;
 }
@@ -506,7 +508,7 @@ form ul li textarea:focus {
 #submit-btn:hover {
   background-color: var(--primary-color);
   color: var(--white);
-  border:1px solid var(--white)
+  border: 1px solid var(--white);
 }
 
 .hamburger ul {
@@ -533,7 +535,7 @@ form ul li textarea:focus {
     padding-top: 16px;
   }
 
-  header a {
+  .logo {
     font-size: 18px;
     line-height: 20px;
     color: var(--primary-color);
