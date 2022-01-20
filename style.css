@@ -640,4 +640,55 @@ form ul li textarea:focus {
 	button {
 		margin: 36px 0;
 	}
+
+  .about {
+    min-height: 924px;
+  }
+
+  .about-container {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    gap: 50px;
+  }
+
+  .about-description {
+    flex: 1;
+  }
+
+  .skill-list {
+    flex: 1;
+  }
+
+  .skill-list ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .skill-list ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .skill-list ul li:nth-child(2)::before {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  .skill-list ul li:nth-child(3)::before {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  .skill-list ul li:nth-child(1)::before {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
 }
