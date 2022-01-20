@@ -65,7 +65,7 @@ img {
 /* Intro section styling starts here */
 .intro-container {
   background-color: var(--white);
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 150px;
   min-height: 718px;
   margin-bottom: 50px;
   min-width: 375px;
@@ -176,6 +176,7 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 650px;
 }
 
 .project h2 {
@@ -271,7 +272,8 @@ button:disabled {
 
 /* about section styling starts here */
 .about {
-  background: url(./assets/images/Base-about-myself.png) no-repeat;
+  background-color: var(--white);
+  border-top-right-radius: 150px;
   background-size: cover;
   min-height: 1263px;
   padding: 114px 24px 0 24px;
@@ -394,7 +396,7 @@ button:disabled {
 .contact {
   background: url(./assets/images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
   background-color: var(--primary-color);
-  border-top-left-radius: 100px;
+  border-top-left-radius: 150px;
   background-size: auto 725px;
   object-fit: cover;
   min-height: 779px;
@@ -476,4 +478,281 @@ form ul li textarea:focus {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+}
+
+.hamburger ul {
+  display: none;
+}
+
+/* Desktop site media querry starts here */
+@media only screen and (min-width: 992px) {
+  .intro-container {
+    background: url('./assets/images/header-background-shape-desktop.svg') no-repeat;
+    background-size: cover;
+    height: 916px;
+    min-width: 375px;
+    max-width: initial;
+    margin-bottom: initial;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 72px;
+    padding-top: 16px;
+  }
+
+  header a {
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--primary-color);
+    padding: 10px 12px;
+    justify-content: center;
+  }
+
+  .hamburger ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--light-navy-blue);
+  }
+
+  .hamburger i {
+    display: none;
+  }
+
+  /* intro section styling starts here */
+  .intro {
+    min-height: 721.46px;
+    width: 95%;
+    margin: auto;
+    min-width: 375px;
+    background: url('./assets/images/header-bg.png') 0 30px no-repeat;
+    background-size: 100% 691.46px;
+  }
+
+  .intro h1 span {
+    display: inline;
+  }
+
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--navy-blue);
+    letter-spacing: 0.37px;
+    margin: 10px 0;
+  }
+
+  .intro p {
+    line-height: 28px;
+    color: var(--light-navy-blue);
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  /* intro section styling ends here */
+
+  /* works section styling starts here */
+  .works {
+    width: 80%;
+    margin-top: 132px;
+  }
+
+  .project {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: initial;
+  }
+
+  .project-description {
+    flex: 1;
+  }
+
+  .project-description h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .project-description p {
+    font-size: 16px;
+    margin: 24px 0;
+  }
+
+  .project-img {
+    flex: 1;
+    object-fit: contain;
+  }
+
+  .order .project-img {
+    order: 1;
+  }
+
+  .project-author li {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--gray-navy-blue);
+  }
+
+  .author-name {
+    color: var(--light-navy-blue);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .project-tools {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 16px;
+    margin: 15px 0;
+  }
+
+  .project-tools li {
+    margin-top: 24px;
+  }
+
+  button {
+    margin: 36px 0;
+  }
+
+  /* works section styling ends here */
+
+  /* about section styling starts here */
+  .about {
+    min-height: 924px;
+  }
+
+  .about-container {
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    gap: 50px;
+  }
+
+  .about-description {
+    flex: 1;
+  }
+
+  .skill-list {
+    flex: 1;
+  }
+
+  .skill-list ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .skill-list ul li:nth-child(2)::before {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  .skill-list ul li:nth-child(3)::before {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  .skill-list ul li:nth-child(1)::before {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* about section styling ends here */
+
+  /* contact section styling starts here */
+  .contact {
+    background: url(./assets/images/contact-form-background-shapes.png) 0 79px no-repeat;
+    background-color: var(--primary-color);
+    border-top-left-radius: 150px;
+    background-size: 100% 632.79px;
+    min-height: 718.7px;
+    min-width: 375px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact p {
+    width: 569px;
+  }
+
+  form {
+    padding: 30px 24px 0 24px;
+  }
+
+  form ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form ul li input {
+    width: 447px;
+    border-radius: 2px;
+  }
+
+  form ul li input:focus {
+    border: 2px solid var(--blue);
+  }
+
+  form ul li textarea {
+    border-radius: 2px;
+  }
+
+  form ul li textarea:focus {
+    border: 2px solid var(--blue);
+  }
+
+  #submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 27px;
+    margin-bottom: 127px;
+  }
+
+  .skill-list ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .hamburger ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .hamburger ul li {
+    margin: 0 8px;
+  }
+
+  form ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* contact section styling starts here */
 }
