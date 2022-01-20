@@ -485,7 +485,6 @@ form ul li textarea:focus {
 
 /* Desktop site media querry starts here */
 @media only screen and (min-width: 576px) {
-	
 	.intro-container {
 		background: url('./assets/images/header-background-shape-desktop.svg') no-repeat;
 		background-size: cover;
@@ -536,7 +535,7 @@ form ul li textarea:focus {
 
 	/* hamburger-nav-bar styling ends here */
 
-  /* intro section styling starts here */
+	/* intro section styling starts here */
 	.intro {
 		min-height: 721.46px;
 		width: 95%;
@@ -575,5 +574,70 @@ form ul li textarea:focus {
 		margin: 10px 0;
 	}
 
-  /* intro section styling ends here */
+	/* intro section styling ends here */
+
+	/* works section styling starts here */
+	.works {
+		width: 80%;
+		margin-top: 132px;
+	}
+
+	.project {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 50px;
+	}
+
+	.project-description {
+		flex: 1;
+	}
+
+	.project-description p {
+		font-size: 16px;
+		margin: 24px 0;
+	}
+
+	.project-img {
+		flex: 1;
+		object-fit: contain;
+	}
+
+	.order .project-img {
+		order: 1;
+	}
+
+	.project h2 {
+		font-size: 40px;
+		line-height: 52px;
+	}
+
+	.project-author li {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: normal;
+		color: var(--gray-navy-blue);
+	}
+
+	.author-name {
+		color: var(--light-navy-blue);
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.project-tools {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 16px;
+		margin: 15px 0;
+	}
+
+	.project-tools li {
+		margin-top: 24px;
+	}
+
+	button {
+		margin: 36px 0;
+	}
 }
