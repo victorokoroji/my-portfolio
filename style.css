@@ -592,6 +592,11 @@ form ul li textarea:focus {
 		flex: 1;
 	}
 
+	.project-description h2 {
+		font-size: 40px;
+		line-height: 52px;
+	}
+
 	.project-description p {
 		font-size: 16px;
 		margin: 24px 0;
@@ -604,11 +609,6 @@ form ul li textarea:focus {
 
 	.order .project-img {
 		order: 1;
-	}
-
-	.project h2 {
-		font-size: 40px;
-		line-height: 52px;
 	}
 
 	.project-author li {
