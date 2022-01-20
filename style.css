@@ -429,8 +429,12 @@ button:disabled {
   text-align: center;
   color: var(--lighter-sky-blue);
   padding: 20px;
+  transition: transform 3s;
 }
 
+.contact p:hover {
+  transform: translateX(10px);
+}
 form {
   padding: 30px 24px 0 24px;
 }
