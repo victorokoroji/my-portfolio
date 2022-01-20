@@ -65,7 +65,7 @@ img {
 /* Intro section styling starts here */
 .intro-container {
 	background-color: var(--white);
-	border-bottom-left-radius: 200px;
+	border-bottom-left-radius: 150px;
 	min-height: 718px;
 	margin-bottom: 50px;
 	min-width: 375px;
@@ -276,7 +276,7 @@ button:disabled {
 /* about section styling starts here */
 .about {
 	background-color: var(--white);
-	border-top-right-radius: 200px;
+	border-top-right-radius: 150px;
 	background-size: cover;
 	min-height: 1263px;
 	padding: 114px 24px 0 24px;
@@ -399,7 +399,7 @@ button:disabled {
 .contact {
 	background: url(./assets/images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
 	background-color: var(--primary-color);
-	border-top-left-radius: 200px;
+	border-top-left-radius: 150px;
 	background-size: auto 725px;
 	object-fit: cover;
 	min-height: 779px;
@@ -484,7 +484,7 @@ form ul li textarea:focus {
 }
 
 /* Desktop site media querry starts here */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
 	.intro-container {
 		background: url('./assets/images/header-background-shape-desktop.svg') no-repeat;
 		background-size: cover;
@@ -694,10 +694,14 @@ form ul li textarea:focus {
 		width: 100%;
 	}
 
+	/* about section styling ends here */
+
+	/* contact section styling starts here */
 	.contact {
-		background: url(./assets/images/contact-form-background-shapes.png) 0 79px no-repeat,
-			url(./assets/images/contact-form-background-shape-desktop.svg) no-repeat;
-		background-size: 100% 632.79px, cover;
+		background: url(./assets/images/contact-form-background-shapes.png) 0 79px no-repeat;
+		background-color: var(--primary-color);
+		border-top-left-radius: 150px;
+		background-size: 100% 632.79px;
 		min-height: 718.7px;
 		min-width: 375px;
 		z-index: 2;
@@ -713,6 +717,12 @@ form ul li textarea:focus {
 
 	form {
 		padding: 30px 24px 0 24px;
+	}
+
+	form ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	form ul li:not(:last-child) {
@@ -744,9 +754,6 @@ form ul li textarea:focus {
 		margin-top: 27px;
 		margin-bottom: 127px;
 	}
-	form ul {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+
+	/* contact section styling starts here */
 }
