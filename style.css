@@ -15,6 +15,7 @@
   --gray: #f7f7f9;
   --deep-blue: #2230d2;
   --light-pale-blue: #b3bac5;
+  --very-lighter-blue: #4053fc3d;
 
   /* typography colors */
   --navy-blue: #172b4d;
@@ -46,6 +47,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--background-primary-color);
+  overflow-x: hidden;
 }
 
 a {
@@ -80,13 +82,24 @@ header {
   padding-top: 44px;
 }
 
-header a {
+.logo {
   font-weight: bold;
   display: block;
   font-size: 18px;
   line-height: 20px;
   color: var(--primary-color);
   text-decoration: none;
+  animation: rotate 2s ease;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hamburger {
@@ -194,6 +207,14 @@ header a {
   height: 16px;
 }
 
+.snapshoot {
+  transition: transform 1s linear;
+}
+
+.snapshoot:hover {
+  transform: scale(1.03);
+}
+
 .project-author li {
   list-style-type: none;
   margin-right: 10px;
@@ -258,6 +279,7 @@ button {
 button:hover {
   background-color: var(--primary-color);
   color: var(--white);
+  box-shadow: 0 8px 16px 0 var(--very-lighter-blue);
 }
 
 button:active {
@@ -420,6 +442,11 @@ button:disabled {
   text-align: center;
   color: var(--lighter-sky-blue);
   padding: 20px;
+  transition: transform 3s;
+}
+
+.contact p:hover {
+  transform: translateX(10px);
 }
 
 form {
@@ -480,6 +507,12 @@ form ul li textarea:focus {
   color: var(--primary-color);
 }
 
+#submit-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
 .hamburger ul {
   display: none;
 }
@@ -504,7 +537,7 @@ form ul li textarea:focus {
     padding-top: 16px;
   }
 
-  header a {
+  .logo {
     font-size: 18px;
     line-height: 20px;
     color: var(--primary-color);
