@@ -15,7 +15,7 @@ The project will contain an about me page, a project page and contact informatio
 
 ## Live Demo
 
-[Live Demo Link](https://vickymarz.github.io/my-portfolio)
+[Live Demo Link](https://vickymarz.github.io/my-portfolio/)
 
 To get a local copy up and running follow these simple example steps.
 
