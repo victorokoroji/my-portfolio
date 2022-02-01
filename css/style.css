@@ -232,7 +232,7 @@ header {
   max-width: 650px;
 }
 
-.project h2 {
+.project-text {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
@@ -269,7 +269,7 @@ header {
   padding-right: 10px;
 }
 
-.author-name {
+.project-author li:first-child {
   color: var(--light-navy-blue);
 }
 

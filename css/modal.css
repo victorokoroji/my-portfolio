@@ -1,7 +1,10 @@
+body {
+	background: blue;
+}
 .modals {
-	padding: 18px 16px;
-	width: 343px;
-	height: 713px;
+	padding: 0 16px;
+	min-width: 343px;
+	min-height: 713px;
 	margin: 60px 16px 50px 16px;
 	background: #ffffff;
 	border: 1px solid #dfe1e6;
@@ -26,9 +29,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	height: 16px;
 	padding: 0px;
-	color: #344563;
 	margin: 12px 0px;
 }
 
@@ -53,18 +54,18 @@
 	color: #7a869a;
 }
 
-.project-author li:not(:first-child)::before {
-	content: url(./assets/images/Counter.png);
-	padding-right: 10px;
-}
-
-.author-name {
+.project-author li:first-child {
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 13px;
 	line-height: 16px;
 	color: #344563;
+}
+
+.project-author li:not(:first-child)::before {
+	content: url(./assets/images/Counter.png);
+	padding-right: 10px;
 }
 
 .modal-description {
@@ -85,56 +86,54 @@
 }
 
 .project-tools {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 16px;
-  height: 24px;
-  margin: 12px 0px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 16px;
+	height: 24px;
+	margin: 12px 0px;
 }
 
 .project-tools li {
-  margin-top: 12px;
-  list-style-type: none;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+	margin-top: 12px;
+	list-style-type: none;
+	border-radius: 8px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
 
-  padding: 4px 12px;
-  letter-spacing: 0.03em;
-  color: var(--primary-color);
+	padding: 4px 12px;
+	letter-spacing: 0.03em;
+	color: var(--primary-color);
 
-/* Primary/B50 */
+	background: #ebebff;
+	color: #6070ff;
 
-background: #EBEBFF;
-color: #6070FF;
-
-margin: 0px 8px;
+	margin: 0px 8px;
 }
 
 button {
-padding: 12px 14px;
-border: 1px solid #6070FF;
-border-radius: 8px;
+	padding: 12px 14px;
+	border: 1px solid #6070ff;
+	border-radius: 8px;
 
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 20px;
-text-align: center;
-color: #6070FF;
-margin: 0px 10px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	color: #6070ff;
+	margin: 0px 10px;
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 button:hover {
-  background-color: var(--primary-color);
-  color: var(--white);
-  box-shadow: 0 8px 16px 0 var(--very-lighter-blue);
+	background-color: var(--primary-color);
+	color: var(--white);
+	box-shadow: 0 8px 16px 0 var(--very-lighter-blue);
 }
