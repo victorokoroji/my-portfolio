@@ -48,6 +48,7 @@ body {
   min-height: 100vh;
   background-color: var(--background-primary-color);
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -76,7 +77,7 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
   margin: auto;
   height: 48px;
   padding-top: 44px;
@@ -102,16 +103,55 @@ header {
   }
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 812px;
+  mix-blend-mode: multiply;
+  background: var(--primary-color);
+  backdrop-filter: blur(5px);
+  display: block;
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+.active {
+  width: 100%;
+}
+
 .hamburger {
   display: flex;
   justify-content: flex-end;
 }
 
-.hamburger i {
+.bars {
   color: var(--light-blue);
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+}
+
+.times {
+  color: var(--white);
+  float: right;
+  margin-top: 40px;
+  margin-right: 38px;
+  font-size: 20px;
+}
+
+.nav-list {
+  margin-top: 90px;
+  margin-left: 28px;
+}
+
+.nav-list li {
+  margin-bottom: 20px;
+}
+
+.nav-list li a {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--white);
 }
 
 .intro {
@@ -513,10 +553,6 @@ form ul li textarea:focus {
   border: 1px solid var(--white);
 }
 
-.hamburger ul {
-  display: none;
-}
-
 /* Desktop site media querry starts here */
 @media only screen and (min-width: 992px) {
   .intro-container {
@@ -545,15 +581,46 @@ form ul li textarea:focus {
     justify-content: center;
   }
 
-  .hamburger ul li a {
+  .nav-list {
+    margin-top: 10px;
+    margin-left: initial;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-list li {
+    margin: 0 8px;
+  }
+
+  .nav-list li a {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: var(--light-navy-blue);
   }
 
-  .hamburger i {
+  .mobile-menu {
+    position: initial;
+    min-width: initial;
+    height: initial;
+    background: initial;
+    backdrop-filter: initial;
+    mix-blend-mode: initial;
+    transition: initial;
+  }
+
+  .bars {
     display: none;
+  }
+
+  .times {
+    display: none;
+  }
+
+  .active {
+    display: block;
+    transform: initial;
   }
 
   /* intro section styling starts here */
@@ -771,16 +838,6 @@ form ul li textarea:focus {
   .skill-list ul {
     display: flex;
     gap: 10px;
-  }
-
-  .hamburger ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .hamburger ul li {
-    margin: 0 8px;
   }
 
   form ul li:not(:last-child) {

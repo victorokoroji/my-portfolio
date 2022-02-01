@@ -15,7 +15,7 @@
 			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTNSEWQ2RY"></script>
 		<script>
 			window.dataLayer = window.dataLayer || []
@@ -33,18 +33,25 @@
 			<header>
 				<a href="index.html" class="logo">Victor</a>
 				<nav class="hamburger">
-					<i class="fa fa-bars fa-1x"></i>
-					<ul>
-						<li>
-							<a href="#">Portfolio</a>
-						</li>
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
+					<div class="menu-bar bars">
+						<i class="fa fa-bars fa-1x"></i>
+					</div>
+					<div class="mobile-menu">
+							<div class="menu-bar times ">
+							<i class="fa fa-times fa-1x"></i>
+						</div>
+						<ul class="nav-list">
+							<li>
+								<a href="#portfolio" class="menu-bar" id="portfolio-link">Portfolio</a>
+							</li>
+							<li>
+								<a href="#about" class="menu-bar" id="about-link">About</a>
+							</li>
+							<li>
+								<a href="#contact" class="menu-bar" id="contact-link">Contact</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
 			</header>
 			<section class="intro">
@@ -87,10 +94,14 @@
 				</div>
 			</section>
 		</section>
-		<section class="works">
+		<section class="works" id="portfolio">
 			<section class="project">
 				<div class="project-img">
-					<img src="./assets/images/Snapshoot-Portfolio-3.png" class="snapshoot" alt="Tonic project image" />
+					<img
+						src="./assets/images/Snapshoot-Portfolio-3.png"
+						class="snapshoot"
+						alt="Tonic project image"
+					/>
 				</div>
 				<div class="project-description">
 					<h2>Tonic</h2>
@@ -112,7 +123,8 @@
 			</section>
 			<section class="project order">
 				<div class="project-img">
-					<img class="snapshoot"
+					<img
+						class="snapshoot"
 						src="./assets/images/Snapshoot-Portfolio-4.png"
 						alt="Multi-Post
 Stories project image"
@@ -139,7 +151,11 @@ Stories project image"
 			</section>
 			<section class="project">
 				<div class="project-img">
-					<img src="./assets/images/Snapshoot-Portfolio.png" class="snapshoot" alt="Tonic project image" />
+					<img
+						src="./assets/images/Snapshoot-Portfolio.png"
+						class="snapshoot"
+						alt="Tonic project image"
+					/>
 				</div>
 				<div class="project-description">
 					<h2>Tonic</h2>
@@ -162,7 +178,8 @@ Stories project image"
 			</section>
 			<section class="project order">
 				<div class="project-img">
-					<img class="snapshoot"
+					<img
+						class="snapshoot"
 						src="./assets/images/Snapshoot-Portfolio-2.png"
 						alt="Multi-Post
 Stories project image"
@@ -188,7 +205,7 @@ Stories project image"
 				</div>
 			</section>
 		</section>
-		<section class="about">
+		<section class="about" id='about'>
 			<div class="about-container">
 				<div class="about-description">
 					<h2
@@ -274,5 +291,6 @@ Stories project image"
 				<button type="submit" id="submit-btn">Get In Touch</button>
 			</form>
 		</section>
+			<script src="index.js"></script>
 	</body>
 </html>
