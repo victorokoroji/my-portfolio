@@ -277,14 +277,13 @@ Stories project image"
 			</p>
 			<form action="https://formspree.io/f/mdobaojq" method="POST" id="form">
 				<ul>
-					<li>
+					<li class="form-element">
 						<input type="text" name="name" placeholder="Enter Your Name" maxlength="30" required />
 					</li>
-					<li>
+					<li class="form-element">
 						<input type="email" name="email" id="email" placeholder="Enter a valid email" required />
-						<small></small>
 					</li>
-					<li>
+					<li class="form-element">
 						<textarea
 							name="message"
 							cols="30"
@@ -296,10 +295,12 @@ Stories project image"
 					</li>
 				</ul>
 				<button type="submit" id="submit-btn">Get In Touch</button>
+					<small></small>
 			</form>
 		</section>
 		<section class="modals"></section>
 		<script src="./js/modals.js"></script>
 		<script src="./js/index.js"></script>
+		<script src="./js/validate.js"></script>
 	</body>
 </html>
