@@ -606,8 +606,6 @@ form ul li textarea:focus {
 .modal-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   margin: 12px 0;
 }
