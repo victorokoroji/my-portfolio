@@ -17,6 +17,8 @@
   --light-pale-blue: #b3bac5;
   --very-lighter-blue: #4053fc3d;
   --blur-gray: #c1c7d0;
+  --red: #f20c23;
+  --green: #198754;
 
   /* typography colors */
   --navy-blue: #172b4d;
@@ -640,6 +642,21 @@ form ul li textarea:focus {
   align-items: center;
   gap: 20px;
   justify-content: center;
+}
+
+small {
+  color: var(--white);
+  display: block;
+}
+
+/* input error */
+input.error {
+  border: 1px solid var(--red);
+}
+
+/* input success */
+input.success {
+  border: 1px solid var(--green);
 }
 
 /* Desktop site media querry starts here */
