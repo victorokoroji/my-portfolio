@@ -46,7 +46,7 @@ const projectDatas = [
 ];
 
 document.querySelector('.modals').innerHTML = projectDatas.map(
-	data => `
+  (data) => `
 <div class="modal">
 <div class="modal-container"> 
   <div class="modal-title">
@@ -81,19 +81,19 @@ document.querySelector('.modals').innerHTML = projectDatas.map(
       <span></span>
       <div class="buttons">
         <a href="${data.liveVersion}" class="modal-button" target="_blank">See Live <img
-						src="./assets/images/Icon.png"
-						alt="live site icon" class="modal-img"
-					/></a>
+src="./assets/images/Icon.png"
+alt="live site icon" class="modal-img"
+/></a>
         <a href="${data.source}" class="modal-button" target="_blank">See Source <img
-						src="./assets/images/github.png"
-						alt="github icon" class="modal-img"
-					/></a>
+src="./assets/images/github.png"
+alt="github icon" class="modal-img"
+/></a>
       </div>
     </div>
   </div>
   </div>
   </div>`,
-)
+);
 
 // event listeners for opening modal on button click
 const modalButtons = Array.from(document.querySelectorAll('.btn'));
