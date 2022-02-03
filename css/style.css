@@ -331,6 +331,7 @@ button,
   color: var(--blue);
   margin: 12px 0;
   background-color: var(--white);
+  display: block;
 }
 
 button:hover,
@@ -622,6 +623,8 @@ form ul li textarea:focus {
   align-items: center;
   gap: 20px;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto:
 }
 
 /* Desktop site media querry starts here */
