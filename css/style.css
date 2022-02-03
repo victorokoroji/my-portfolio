@@ -621,6 +621,7 @@ form ul li textarea:focus {
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: center;
 }
 
 /* Desktop site media querry starts here */
