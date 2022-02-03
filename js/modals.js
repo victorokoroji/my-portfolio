@@ -46,7 +46,7 @@ const projectDatas = [
 ];
 
 document.querySelector('.modals').innerHTML = projectDatas.map(
-	data => `
+  (data) => `
 <div class="modal">
 <div class="modal-container"> 
   <div class="modal-title">
@@ -93,7 +93,7 @@ alt="github icon" class="modal-img"
   </div>
   </div>
   </div>`,
-)
+);
 
 // event listeners for opening modal on button click
 const modalButtons = Array.from(document.querySelectorAll('.btn'));
