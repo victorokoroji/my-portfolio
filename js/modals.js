@@ -51,9 +51,9 @@ document.querySelector('.modals').innerHTML = projectDatas.map(
 <div class="modal-container"> 
   <div class="modal-title">
 <h2 class="project-title">${data.name}</h2>
-  <div class="close">
-<i class="fa fa-times fa-1x"></i>
-  </div>
+    <div class="close">
+  <i class="fa fa-times fa-1x"></i>
+    </div>
 </div>
   <ul class="project-author">
     <li>${data.author}</li>
@@ -86,3 +86,22 @@ document.querySelector('.modals').innerHTML = projectDatas.map(
   </div>
   </div>`,
 );
+
+// event listeners for opening modal on button click
+const modalButtons = Array.from(document.querySelectorAll('.btn'));
+const modals = Array.from(document.querySelectorAll('.modal'));
+
+const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]]);
+
+modalButtonZip.forEach((pair) => {
+  pair[0].addEventListener('click', () => {
+    pair[1].style.display = 'block';
+  });
+});
+
+// event listener for closing modal on button click
+document.querySelectorAll('.close').forEach((close) => {
+  close.addEventListener('click', () => {
+    document.querySelectorAll('.modal').forEach((modal) => { modal.style.display = 'none'; });
+  });
+});

@@ -16,6 +16,7 @@
   --deep-blue: #2230d2;
   --light-pale-blue: #b3bac5;
   --very-lighter-blue: #4053fc3d;
+  --blur-gray: #c1c7d0;
 
   /* typography colors */
   --navy-blue: #172b4d;
@@ -564,10 +565,10 @@ form ul li textarea:focus {
   right: 0;
   bottom: 0;
   overflow: auto;
-  backdrop-filter: blur(10px);
-  background: #c1c7d0;
+  backdrop-filter: blur(20px);
+  background: var(--blur-gray);
   mix-blend-mode: multiply;
-  z-index: 2;
+  z-index: 5;
   animation: modalopen 1s ease-out;
   display: none;
 }
