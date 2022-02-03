@@ -567,7 +567,6 @@ form ul li textarea:focus {
   overflow: auto;
   backdrop-filter: blur(20px);
   background: var(--blur-gray);
-  mix-blend-mode: multiply;
   z-index: 5;
   animation: modalopen 1s ease-out;
   display: none;
