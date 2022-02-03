@@ -39,14 +39,14 @@ const projectDatas = [
     year: 2015,
     description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     featuredImage: './assets/images/Snapshoot-Portfolio.png',
-    technologies: ['html', 'css', 'javascript'],
+    technologies: ['html', 'css', 'javascript', 'bootstrap'],
     liveVersion: null,
     source: null,
   },
 ];
 
 document.querySelector('.modals').innerHTML = projectDatas.map(
-  (data) => `
+	data => `
 <div class="modal">
 <div class="modal-container"> 
   <div class="modal-title">
@@ -76,16 +76,24 @@ document.querySelector('.modals').innerHTML = projectDatas.map(
         <li>${data.technologies[0]}</li>
         <li>${data.technologies[1]}</li>
         <li>${data.technologies[2]}</li>
+        <li>${data.technologies[3]}</li>
       </ul>
+      <span></span>
       <div class="buttons">
-        <a href="${data.liveVersion}" class="modal-button">See Live</a>
-        <a href="${data.source}" class="modal-button">See Source</a>
+        <a href="${data.liveVersion}" class="modal-button" target="_blank">See Live <img
+						src="./assets/images/Icon.png"
+						alt="live site icon" class="modal-img"
+					/></a>
+        <a href="${data.source}" class="modal-button" target="_blank">See Source <img
+						src="./assets/images/github.png"
+						alt="github icon" class="modal-img"
+					/></a>
       </div>
     </div>
   </div>
   </div>
   </div>`,
-);
+)
 
 // event listeners for opening modal on button click
 const modalButtons = Array.from(document.querySelectorAll('.btn'));
