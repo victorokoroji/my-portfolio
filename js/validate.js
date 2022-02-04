@@ -2,7 +2,6 @@ const form = document.querySelector('#form');
 const EMAIL_INVALID = 'Sorry!, form was not submitted. Your email should be in lowercase e.g abc@gmail.com';
 
 function displayMessage(input, message, type) {
-  // input.parentNode.querySelector('small').innerText = message;
   document.querySelector('small').innerText = message;
   input.className = type ? 'success' : 'error';
   return type;
