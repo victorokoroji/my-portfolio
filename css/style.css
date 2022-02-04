@@ -17,6 +17,8 @@
   --light-pale-blue: #b3bac5;
   --very-lighter-blue: #4053fc3d;
   --blur-gray: #c1c7d0;
+  --red: #fd0019;
+  --green: #198754;
 
   /* typography colors */
   --navy-blue: #172b4d;
@@ -640,6 +642,30 @@ form ul li textarea:focus {
   align-items: center;
   gap: 20px;
   justify-content: center;
+}
+
+.validate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+small {
+  color: var(--black);
+  display: block;
+  width: 55%;
+  z-index: 2;
+  font-weight: 500;
+}
+
+/* input error */
+input.error {
+  border: 1px solid var(--red);
+}
+
+/* input success */
+input.success {
+  border: 1px solid var(--green);
 }
 
 /* Desktop site media querry starts here */
