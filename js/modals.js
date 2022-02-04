@@ -99,7 +99,7 @@ alt="github icon" class="modal-img"
 const modalButtons = Array.from(document.querySelectorAll('.btn'));
 const modals = Array.from(document.querySelectorAll('.modal'));
 
-const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]]);
+const modalButtonZip = modalButtons.forEach((button, i) => [button, modals[i]]);
 
 modalButtonZip.forEach((pair) => {
   pair[0].addEventListener('click', () => {
