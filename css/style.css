@@ -653,7 +653,7 @@ form ul li textarea:focus {
 small {
   color: var(--black);
   display: block;
-  width:55%;
+  width: 55%;
   z-index: 2;
   font-weight: 500;
 }
