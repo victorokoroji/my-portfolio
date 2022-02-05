@@ -1,21 +1,21 @@
 const formData = {
 	name: '',
 	email: '',
-	desc: '',
+	description: '',
 }
 
 function fillDatas() {
 	let storageData = localStorage.getItem('form-data')
 	storageData = JSON.parse(storageData)
-	document.getElementById('input-name').value = storageData.name
-	document.getElementById('input-email').value = storageData.email
-	document.getElementById('input-desc').value = storageData.desc
+	document.getElementById('name').value = storageData.name
+	document.getElementById('email').value = storageData.email
+	document.getElementById('description').value = storageData.description
 }
 
 function populateDatas() {
 	formData.name = document.getElementById('name').value
 	formData.email = document.getElementById('email').value
-	formData.desc = document.getElementById('description').value
+	formData.description = document.getElementById('description').value
 	localStorage.setItem('form-data', JSON.stringify(formData))
 	fillDatas()
 }
