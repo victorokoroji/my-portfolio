@@ -75,16 +75,25 @@ img {
   min-height: 718px;
   margin-bottom: 50px;
   min-width: 375px;
+  position: relative;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  width: 85%;
-  margin: auto;
-  height: 48px;
-  padding-top: 44px;
+  height: 72px;
+  min-width: 100%;
+  padding: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
+}
+
+.header-active {
+  background-color: var(--white);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -124,6 +133,11 @@ header {
 
 .active {
   width: 100%;
+}
+
+.active-link {
+  border-bottom: 3px solid var(--deep-navy-blue);
+  font-weight: 900;
 }
 
 .hamburger {
@@ -256,6 +270,8 @@ header {
   justify-content: flex-start;
   align-items: center;
   height: 16px;
+  padding: 0;
+  margin: 12px 0;
 }
 
 .snapshoot {
@@ -684,10 +700,9 @@ input.success {
   header {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    height: 72px;
     padding-top: 16px;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 
   .logo {
@@ -746,7 +761,7 @@ input.success {
     width: 95%;
     margin: auto;
     min-width: 375px;
-    background: url('../assets/images/header-bg.png') 0 30px no-repeat;
+    background: url('../assets/images/header-bg.png') 0 70px no-repeat;
     background-size: 100% 691.46px;
   }
 
@@ -977,5 +992,10 @@ input.success {
     align-items: flex-start;
     gap: 20px;
     justify-content: left;
+  }
+
+  .nav-list li a:hover {
+    border-bottom: 3px solid var(--deep-navy-blue);
+    font-weight: 900;
   }
 }
