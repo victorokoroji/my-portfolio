@@ -21,9 +21,9 @@ function populateDatas() {
 }
 
 const inputList = []
-inputList.push(document.getElementById('input-name'))
-inputList.push(document.getElementById('input-email'))
-inputList.push(document.getElementById('input-desc'))
+inputList.push(document.getElementById('name'))
+inputList.push(document.getElementById('email'))
+inputList.push(document.getElementById('description'))
 
 inputList.forEach(value => {
 	value.onchange = function trig() {
