@@ -92,7 +92,7 @@ alt="github icon" class="modal-img"
     </div>
   </div>
   </div>
-  </div>`
+  </div>`,
 ).join('');
 
 // event listeners for opening modal on button click
