@@ -137,6 +137,7 @@ header {
 
 .active-link {
   border-bottom: 3px solid var(--deep-navy-blue);
+  font-weight: 900;
 }
 
 .hamburger {
@@ -583,10 +584,6 @@ form ul li textarea:focus {
   border: 1px solid var(--white);
 }
 
-.nav-list li:hover {
-  border-bottom: 3px solid var(--deep-navy-blue);
-}
-
 /* modals styling starts here */
 
 .modal {
@@ -764,7 +761,7 @@ input.success {
     width: 95%;
     margin: auto;
     min-width: 375px;
-    background: url('../assets/images/header-bg.png') 0 30px no-repeat;
+    background: url('../assets/images/header-bg.png') 0 70px no-repeat;
     background-size: 100% 691.46px;
   }
 
@@ -995,5 +992,10 @@ input.success {
     align-items: flex-start;
     gap: 20px;
     justify-content: left;
+  }
+
+  .nav-list li a:hover {
+    border-bottom: 3px solid var(--deep-navy-blue);
+    font-weight: 900;
   }
 }
