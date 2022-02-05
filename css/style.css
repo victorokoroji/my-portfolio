@@ -227,6 +227,8 @@ header {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
 .project {
