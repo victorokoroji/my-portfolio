@@ -4,7 +4,8 @@ const projectDatas = [
     author: 'CANOPY',
     stack: 'Backend Dev',
     year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: './assets/images/Snapshoot-Portfolio-3.png',
     technologies: ['html', 'css', 'javascript'],
     liveVersion: null,
@@ -15,7 +16,8 @@ const projectDatas = [
     author: 'FACEBOOK',
     stack: 'Full Stack Dev',
     year: 2015,
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    description:
+			'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     featuredImage: './assets/images/Snapshoot-Portfolio-4.png',
     technologies: ['html', 'css', 'javascript'],
     liveVersion: null,
@@ -26,7 +28,8 @@ const projectDatas = [
     author: 'FACEBOOK 360',
     stack: 'Full Stack Dev',
     year: 2015,
-    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    description:
+			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     featuredImage: './assets/images/Snapshoot-Portfolio.png',
     technologies: ['html', 'css', 'javascript'],
     liveVersion: null,
@@ -37,16 +40,59 @@ const projectDatas = [
     author: 'Uber',
     stack: 'Lead Developer',
     year: 2015,
-    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    featuredImage: './assets/images/Snapshoot-Portfolio.png',
+    description:
+			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    featuredImage: './assets/images/Snapshoot-Portfolio-2.png',
     technologies: ['html', 'css', 'javascript', 'bootstrap'],
     liveVersion: null,
     source: null,
   },
 ];
 
-document.querySelector('.modals').innerHTML = projectDatas.map(
-  (data) => `
+document.querySelector('.works').innerHTML = projectDatas
+  .map(
+    (data) => `
+    <section class="project">
+				<div class="project-img">
+					<img
+						src= ${data.featuredImage}
+						class="snapshoot"
+						alt="Tonic project image"
+					/>
+				</div>
+				<div class="project-description">
+					<h2 class="project-title">${data.name}</h2>
+					<ul class="project-author">
+						<li>${data.author}</li>
+            <li>${data.stack}</li>
+            <li>${data.year}</li>
+					</ul>
+					<p class="project-text"
+						>${data.description}</p
+					>
+					<ul class="project-tools">
+						<li>${data.technologies[0]}</li>
+            <li>${data.technologies[1]}</li>
+            <li>${data.technologies[2]}</li>
+            <li>${data.technologies[3]}</li>
+					</ul>
+					<button type="button" class="btn">See Project</button>
+				</div>
+			</section>
+    `,
+  )
+  .join('');
+
+for (let i = 0; i <= projectDatas.length; i++) {
+  if (i % 2 == 1) {
+    console.log(i);
+    document.querySelectorAll('.project')[i].classList.add('order');
+  }
+}
+
+document.querySelector('.modals').innerHTML = projectDatas
+  .map(
+    (data) => `
 <div class="modal">
 <div class="modal-container"> 
   <div class="modal-title">
@@ -93,7 +139,8 @@ alt="github icon" class="modal-img"
   </div>
   </div>
   </div>`,
-).join('');
+  )
+  .join('');
 
 // event listeners for opening modal on button click
 const modalButtons = Array.from(document.querySelectorAll('.btn'));
@@ -110,6 +157,8 @@ modalButtonZip.forEach((pair) => {
 // event listener for closing modal on button click
 document.querySelectorAll('.close').forEach((close) => {
   close.addEventListener('click', () => {
-    document.querySelectorAll('.modal').forEach((modal) => { modal.style.display = 'none'; });
+    document.querySelectorAll('.modal').forEach((modal) => {
+      modal.style.display = 'none';
+    });
   });
 });
