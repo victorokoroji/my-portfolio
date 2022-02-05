@@ -171,6 +171,10 @@ header {
 	color: var(--white);
 }
 
+.nav-list li:hover {
+  	border-bottom: 3px solid var(--deep-navy-blue);
+}
+
 .intro {
 	display: flex;
 	flex-direction: column;
