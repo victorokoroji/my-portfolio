@@ -1,4 +1,5 @@
 const form = document.querySelector('#form');
+
 const EMAIL_INVALID = 'Sorry!, form was not submitted. Your email should be in lowercase e.g abc@gmail.com';
 
 function displayMessage(input, message, type) {
@@ -26,10 +27,10 @@ function validateEmail(input, invalidMsg) {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
   const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
 
   if (emailValid) {
     form.submit();
+    localStorage.clear();
   }
 });

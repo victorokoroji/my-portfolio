@@ -93,7 +93,7 @@ alt="github icon" class="modal-img"
   </div>
   </div>
   </div>`,
-);
+).join('');
 
 // event listeners for opening modal on button click
 const modalButtons = Array.from(document.querySelectorAll('.btn'));
