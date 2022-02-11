@@ -4,7 +4,7 @@
   --white: #fff;
   --background-primary-color: #e5e5e5;
   --primary-color: #6070ff;
-  --primary-color-transparent: #6070ffd2;
+  --primary-color-light: #4b5dffde;
   --light-sky-blue: #7f8cff;
 
   /* secondary colors */
@@ -82,6 +82,7 @@ img {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 72px;
   min-width: 100%;
   padding: 25px;
@@ -100,7 +101,7 @@ header {
 .logo {
   font-weight: bold;
   display: block;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 20px;
   color: var(--primary-color);
   text-decoration: none;
@@ -124,9 +125,8 @@ header {
   bottom: 0;
   width: 0;
   height: 812px;
-  background: var(--primary-color-transparent);
-  backdrop-filter: blur(5px);
-  display: block;
+  background: var(--primary-color-light);
+  backdrop-filter: blur(7px);
   transition: all 1s ease;
   z-index: 2;
 }
@@ -147,13 +147,16 @@ header {
 
 .bars {
   color: var(--light-blue);
+  font-size: 24px;
 }
 
 .times {
   color: var(--white);
-  float: right;
-  margin-top: 30px;
-  margin-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 28px;
+  margin-top: 20px;
   font-size: 24px;
 }
 
@@ -595,8 +598,8 @@ form ul li textarea:focus {
   right: 0;
   bottom: 0;
   overflow: auto;
-  backdrop-filter: blur(20px);
-  background: var(--blur-gray);
+  backdrop-filter: blur(7px);
+  background: #7f8cff90;
   z-index: 5;
   animation: modalopen 1s ease-out;
   display: none;
@@ -706,6 +709,7 @@ input.success {
   }
 
   .logo {
+    font-size: 18px;
     line-height: 20px;
     color: var(--primary-color);
     padding: 10px 12px;
