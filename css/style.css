@@ -166,7 +166,7 @@ header {
 }
 
 .nav-list li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .nav-list li a {
@@ -389,8 +389,8 @@ button:disabled {
   background-color: var(--white);
   border-top-right-radius: 150px;
   background-size: cover;
-  min-height: 1263px;
-  padding: 114px 24px 0 24px;
+  min-height: 2063px;
+  padding: 114px 24px 24px 24px;
   margin-top: 50px;
   min-width: 375px;
 }
@@ -436,9 +436,21 @@ button:disabled {
   padding-bottom: 5px;
 }
 
-.languages p::after {
-  content: url(../assets/images/Union.png);
+.skill-list-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.angle-icon {
+  transform: rotate(-90deg);
+  transition: all 1s ease-out;
+}
+
+.language-list {
+  display: block;
+}
+
 
 .languages p {
   display: flex;
@@ -446,18 +458,10 @@ button:disabled {
   align-items: flex-start;
 }
 
-.frameworks p::after {
-  content: url(../assets/images/arrow-right.png);
-}
-
 .frameworks p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.skills p::after {
-  content: url(../assets/images/arrow-right.png);
 }
 
 .skills p {
@@ -477,19 +481,33 @@ button:disabled {
   color: var(--black);
 }
 
-.skill-list ul li:nth-child(1)::before {
+.language-list li:nth-child(1)::before {
   padding: 5px 10px;
   content: url(../assets/images/javascript.png);
 }
 
-.skill-list ul li:nth-child(2)::before {
+.language-list li:nth-child(2)::before {
   content: url(../assets/images/html5.png);
   padding: 5px 10px;
 }
 
-.skill-list ul li:nth-child(3)::before {
+.language-list li:nth-child(3)::before {
   content: url(../assets/images/css3.png);
   padding: 5px 10px;
+}
+
+.framework-list li:nth-child(1)::before {
+  padding: 5px 10px;
+  content: url(../assets/images/bootstrap.png);
+}
+
+.framework-list li:nth-child(2)::before {
+  padding: 5px 10px;
+  content: url(../assets/images/reactjs.png);
+}
+
+.soft-skill-list li {
+  padding: 20px 10px;
 }
 
 /* contact section styling starts here */
@@ -598,8 +616,8 @@ form ul li textarea:focus {
   right: 0;
   bottom: 0;
   overflow: auto;
-  backdrop-filter: blur(7px);
-  background: #7f8cff90;
+  backdrop-filter: blur(5px);
+  background: #7f8cff6d;
   z-index: 5;
   animation: modalopen 1s ease-out;
   display: none;
