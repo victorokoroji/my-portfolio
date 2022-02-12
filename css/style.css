@@ -69,16 +69,6 @@ img {
   object-fit: cover;
 }
 
-/* Intro section styling starts here */
-.intro-container {
-  background-color: var(--white);
-  border-bottom-left-radius: 150px;
-  min-height: 718px;
-  margin-bottom: 50px;
-  min-width: 375px;
-  position: relative;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -91,6 +81,7 @@ header {
   left: 0;
   right: 0;
   z-index: 2;
+  background-color: var(--white);
 }
 
 .header-active {
@@ -179,11 +170,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 604px;
   padding: 120px 20px;
-  min-width: 375px;
   background: url('../assets/images/header-shapes-mobile.png') 0 50px no-repeat;
   background-size: 100% auto;
+  background-color: var(--white);
+    border-bottom-left-radius: 150px;
+      min-height: 718px;
+  margin-bottom: 50px;
 }
 
 .intro h1 {
@@ -257,7 +250,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 650px;
+  /* max-width: 650px; */
 }
 
 .project-title {
@@ -389,10 +382,9 @@ button:disabled {
   background-color: var(--white);
   border-top-right-radius: 150px;
   background-size: cover;
-  min-height: 2063px;
+  /* min-height: 1063px; */
   padding: 114px 24px 24px 24px;
   margin-top: 50px;
-  min-width: 375px;
 }
 
 .about-container {
@@ -431,7 +423,7 @@ button:disabled {
 }
 
 .frameworks,
-.skills {
+.skills, .languages {
   border-bottom: 1px solid var(--light-pale-blue);
   padding-bottom: 5px;
 }
@@ -447,7 +439,7 @@ button:disabled {
   transition: all 1s ease-out;
 }
 
-.language-list {
+.lists {
   display: block;
 }
 
@@ -512,15 +504,19 @@ button:disabled {
 
 /* contact section styling starts here */
 .contact {
-  background: url(../assets/images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
-  background-color: var(--primary-color);
-  border-top-left-radius: 150px;
+  background-color: var(--white);
+  padding-top: 80px
+}
+
+.contact-container {
+   background: url(../assets/images/contact-form-shapes-mobile.png) 100% 21px no-repeat;
+    background-color: var(--primary-color);
+     border-top-left-radius: 150px;
   background-size: auto 725px;
   object-fit: cover;
   min-height: 779px;
-  min-width: 375px;
-  margin-top: -170px;
   z-index: 2;
+  
 }
 
 .contact h2 {
@@ -638,7 +634,6 @@ form ul li textarea:focus {
   border: 1px solid #dfe1e6;
   background: var(--white);
   border-radius: 16px;
-  min-width: 343px;
   min-height: 713px;
   padding: 18px 16px;
 }
