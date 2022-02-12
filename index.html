@@ -30,14 +30,12 @@
 		<title>Okoroji Victor Portfolio Website</title>
 	</head>
 	<body>
-		<section class="intro-container">
 			<header>
 				<a href="index.html" class="logo">Welcome!</a>
 				<nav class="hamburger">
 					<div class="menu-bar bars">
 						<i class="fa fa-bars fa-1x"></i>
 					</div>
-					<!-- Mobile Menu Bar -->
 					<div class="mobile-menu">
 						<div class="menu-bar times">
 							<i class="fa fa-times fa-1x"></i>
@@ -114,7 +112,6 @@
 					</ul>
 				</div>
 			</section>
-		</section>
 		<section class="works" id="portfolio"></section>
 		<section class="about" id="about">
 			<div class="about-container">
@@ -160,11 +157,11 @@
 					<div class="languages">
 						<div class="skill-list-menu">
 							<p>Languages</p>
-							<div id="angle-icon">
+							<div class="angle-icon">
 								<img src="../assets/images/Union.png" alt="arrow-right" />
 							</div>
 						</div>
-						<ul class="language-list">
+						<ul class="language-list lists">
 							<li>Javascript</li>
 							<li>HTML</li>
 							<li>CSS</li>
@@ -173,11 +170,11 @@
 					<div class="frameworks">
 						<div class="skill-list-menu">
 							<p>Frameworks</p>
-							<div id="angle-icon">
+							<div class="angle-icon">
 								<img src="../assets/images/Union.png" alt="arrow-right" />
 							</div>
 						</div>
-						<ul class="framework-list">
+						<ul class="framework-list lists">
 							<li>Bootstrap</li>
 							<li>React Js</li>
 						</ul>
@@ -185,68 +182,70 @@
 					<div class="skills">
 						<div class="skill-list-menu">
 							<p>Skills</p>
-							<div id="angle-icon">
+							<div class="angle-icon">
 								<img src="../assets/images/Union.png" alt="arrow-right" />
 							</div>
 						</div>
-						<ul class="soft-skill-list">
-						<li>Collaboration</li>
-						<li>Team Work</li>
-						<li>Problem Solving</li>
-						<li>Effective Communication</li>
-						<li>Willingness to Learn</li>
-						<li>Adaptability</li>
-						<li>Organisation</li>
-						<li>Critical Thinking</li>
+						<ul class="soft-skill-list lists">
+							<li>Collaboration</li>
+							<li>Team Work</li>
+							<li>Problem Solving</li>
+							<li>Effective Communication</li>
+							<li>Willingness to Learn</li>
+							<li>Adaptability</li>
+							<li>Organisation</li>
+							<li>Critical Thinking</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="contact" id="contact">
-			<h2>Contact me</h2>
-			<p
-				>If you have an application you are interested in developing, a feature that you need built
-				or a project that needs coding. I’d love to help with it
-			</p>
-			<form action="https://formspree.io/f/mdobaojq" method="POST" id="form">
-				<ul>
-					<li class="form-element">
-						<input
-							type="text"
-							name="name"
-							id="name"
-							placeholder="Enter Your Name"
-							maxlength="30"
-							required
-						/>
-					</li>
-					<li class="form-element">
-						<input
-							type="email"
-							name="email"
-							id="email"
-							placeholder="Enter a valid email"
-							required
-						/>
-					</li>
-					<li class="form-element">
-						<textarea
-							name="message"
-							cols="30"
-							rows="10"
-							maxlength="500"
-							id="description"
-							placeholder="Write your message here"
-							required
-						></textarea>
-					</li>
-				</ul>
-				<div class="validate">
-					<button type="submit" id="submit-btn">Get In Touch</button>
-					<small></small>
-				</div>
-			</form>
+			<div class="contact-container">
+				<h2>Contact me</h2>
+				<p
+					>If you have an application you are interested in developing, a feature that you need
+					built or a project that needs coding. I’d love to help with it
+				</p>
+				<form action="https://formspree.io/f/mdobaojq" method="POST" id="form">
+					<ul>
+						<li class="form-element">
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Enter Your Name"
+								maxlength="30"
+								required
+							/>
+						</li>
+						<li class="form-element">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Enter a valid email"
+								required
+							/>
+						</li>
+						<li class="form-element">
+							<textarea
+								name="message"
+								cols="30"
+								rows="10"
+								maxlength="500"
+								id="description"
+								placeholder="Write your message here"
+								required
+							></textarea>
+						</li>
+					</ul>
+					<div class="validate">
+						<button type="submit" id="submit-btn">Get In Touch</button>
+						<small></small>
+					</div>
+				</form>
+			</div>
 		</section>
 		<section class="modals"></section>
 		<script src="./js/data.js"></script>
