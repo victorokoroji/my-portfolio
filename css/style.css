@@ -866,9 +866,6 @@ input.success {
 	/* works section styling ends here */
 
 	/* about section styling starts here */
-	.about {
-		min-height: 924px;
-	}
 
 	.about-container {
 		flex-direction: row;
