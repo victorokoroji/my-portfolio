@@ -7,7 +7,7 @@ const projectDatas = [
 		description:
 			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 		featuredImage: './assets/images/Snapshoot-Portfolio-3.png',
-		technologies: ['html', 'css', 'javascript', 'bootstrap'],
+		technologies: ['html', 'css', 'javascript'],
 		liveVersion: null,
 		source: null,
 	},
@@ -19,7 +19,7 @@ const projectDatas = [
 		description:
 			'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
 		featuredImage: './assets/images/Snapshoot-Portfolio-4.png',
-		technologies: ['html', 'css', 'javascript', 'bootstrap'],
+		technologies: ['html', 'css', 'javascript'],
 		liveVersion: null,
 		source: null,
 	},
@@ -31,7 +31,7 @@ const projectDatas = [
 		description:
 			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
 		featuredImage: './assets/images/Snapshoot-Portfolio.png',
-		technologies: ['html', 'css', 'javascript', 'bootstrap'],
+		technologies: ['html', 'css', 'javascript'],
 		liveVersion: null,
 		source: null,
 	},
@@ -43,15 +43,15 @@ const projectDatas = [
 		description:
 			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
 		featuredImage: './assets/images/Snapshoot-Portfolio-2.png',
-		technologies: ['html', 'css', 'javascript', 'bootstrap'],
+		technologies: ['html', 'css', 'javascript'],
 		liveVersion: null,
 		source: null,
 	},
 ]
 
 document.querySelector('.works').innerHTML = projectDatas
-  .map(
-    (data) => `
+	.map(
+		data => `
     <section class="project">
 <div class="project-img">
 <img
@@ -74,14 +74,13 @@ alt="Tonic project image"
 <li>${data.technologies[0]}</li>
 <li>${data.technologies[1]}</li>
 <li>${data.technologies[2]}</li>
-<li>${data.technologies[3]}</li>
 </ul>
 <button type="button" class="btn">See Project</button>
 </div>
 </section>
     `,
-  )
-  .join('');
+	)
+	.join('')
 
 for (let i = 0; i <= projectDatas.length; i += 1) {
   if (i % 2 === 1) {
@@ -121,7 +120,6 @@ document.querySelector('.modals').innerHTML = projectDatas
         <li>${data.technologies[0]}</li>
         <li>${data.technologies[1]}</li>
         <li>${data.technologies[2]}</li>
-        <li>${data.technologies[3]}</li>
       </ul>
       <span></span>
       <div class="buttons">

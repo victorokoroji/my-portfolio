@@ -97,19 +97,26 @@ function contactSectionObserver() {
 contactSectionObserver()
 
 function toggleArrows() {
-	const languageList = document.querySelector('.language-list')
-	const angleIcon = document.querySelector('#angle-icon')
-	const languages = document.querySelector('.languages')
-	document.querySelector('#angle-icon').addEventListener('click', () => {
-		if (languageList.style.display == 'block') {
-			languageList.style.display = 'none'
-			angleIcon.classList.add('angle-icon')
-			languages.style.borderBottom = '1px solid var(--light-pale-blue)'
-		} else {
-			languageList.style.display = 'block'
-			angleIcon.classList.remove('angle-icon')
-			languages.style.borderBottom = 'initial'
-		}
+	const lists = Array.from(document.querySelectorAll('.lists'))
+	const angleIcon = Array.from(document.querySelectorAll('.angle-icon'))
+
+	const listZip = angleIcon.map((btn, index) => [btn, lists[index]])
+
+	listZip.forEach(pair => {
+    pair[1].style.display = 'block'
+
+		pair[0].addEventListener('click', () => {
+			if (pair[1].style.display == 'block' || pair[1].style.display == 'flex') {
+				pair[1].style.display = 'none'
+				pair[0].classList.add('rotate-angle-icon')
+			} else if (window.innerWidth > 992) {
+				pair[1].style.display = 'flex'
+				pair[0].classList.remove('rotate-angle-icon')
+			} else  {
+				pair[1].style.display = 'block'
+				pair[0].classList.remove('rotate-angle-icon')
+      }
+		})
 	})
 }
 toggleArrows()
