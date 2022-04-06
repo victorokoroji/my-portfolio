@@ -96,17 +96,6 @@ header {
 	line-height: 20px;
 	color: var(--primary-color);
 	text-decoration: none;
-	animation: rotate 2s ease;
-}
-
-@keyframes rotate {
-	from {
-		transform: rotate(0);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
 }
 
 .mobile-menu {

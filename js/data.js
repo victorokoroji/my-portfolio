@@ -1,15 +1,15 @@
 const projectDatas = [
 	{
-		name: 'Tonic',
-		author: 'CANOPY',
-		stack: 'Backend Dev',
-		year: 2015,
+		name: 'Math-Magician',
+		author: 'OKOROJI VICTOR',
+		stack: 'Frontend Dev',
+		year: 2022,
 		description:
-			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-		featuredImage: './assets/images/Snapshoot-Portfolio-3.png',
-		technologies: ['html', 'css', 'javascript'],
-		liveVersion: null,
-		source: null,
+			'Math-Magician" is a web app for all lovers of mathematics. It is a Single Page Application that allows users to make simple calculations.',
+		featuredImage: './assets/images/calculator.png',
+		technologies: ['React', 'css'],
+		liveVersion: 'https://math-magician-calculator.netlify.app/',
+		source: 'https://github.com/vickymarz/math-magician',
 	},
 	{
 		name: 'Multi-Post Stories',
@@ -83,14 +83,14 @@ alt="Tonic project image"
 	.join('')
 
 for (let i = 0; i <= projectDatas.length; i += 1) {
-  if (i % 2 === 1) {
-    document.querySelectorAll('.project')[i].classList.add('order');
-  }
+	if (i % 2 === 1) {
+		document.querySelectorAll('.project')[i].classList.add('order')
+	}
 }
 
 document.querySelector('.modals').innerHTML = projectDatas
-  .map(
-    (data) => `
+	.map(
+		data => `
 <div class="modal">
 <div class="modal-container"> 
   <div class="modal-title">
@@ -136,26 +136,26 @@ alt="github icon" class="modal-img"
   </div>
   </div>
   </div>`,
-  )
-  .join('');
+	)
+	.join('')
 
 // event listeners for opening modal on button click
-const modalButtons = Array.from(document.querySelectorAll('.btn'));
-const modals = Array.from(document.querySelectorAll('.modal'));
+const modalButtons = Array.from(document.querySelectorAll('.btn'))
+const modals = Array.from(document.querySelectorAll('.modal'))
 
-const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]]);
+const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]])
 
-modalButtonZip.forEach((pair) => {
-  pair[0].addEventListener('click', () => {
-    pair[1].style.display = 'block';
-  });
-});
+modalButtonZip.forEach(pair => {
+	pair[0].addEventListener('click', () => {
+		pair[1].style.display = 'block'
+	})
+})
 
 // event listener for closing modal on button click
-document.querySelectorAll('.close').forEach((close) => {
-  close.addEventListener('click', () => {
-    document.querySelectorAll('.modal').forEach((modal) => {
-      modal.style.display = 'none';
-    });
-  });
-});
+document.querySelectorAll('.close').forEach(close => {
+	close.addEventListener('click', () => {
+		document.querySelectorAll('.modal').forEach(modal => {
+			modal.style.display = 'none'
+		})
+	})
+})
