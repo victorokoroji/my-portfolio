@@ -19,7 +19,7 @@ const projectDatas = [
 		description:
 			'Math-Magician" is a web app for all lovers of mathematics. It is a Single Page Application that allows users to make simple calculations.',
 		featuredImage: './assets/images/calculator.png',
-		technologies: ['React', 'css'],
+		technologies: ['React', 'css', 'jest'],
 		liveVersion: 'https://math-magician-calculator.netlify.app/',
 		source: 'https://github.com/vickymarz/math-magician',
 	},
@@ -42,7 +42,7 @@ const projectDatas = [
 		year: 2015,
 		description:
 			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-		featuredImage: './assets/images/Snapshoot-Portfolio.png',
+		featuredImage: './assets/images/Snapshoot-Portfolio-2.png',
 		technologies: ['html', 'css', 'javascript'],
 		liveVersion: null,
 		source: null,
