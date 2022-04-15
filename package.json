@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "/",
+  "homepage": "https://github.com/vickymarz/my-portfolio/index.html",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
