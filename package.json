@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/vickymarz/my-portfolio/issues"
   },
-  "homepage": "https://github.com/vickymarz/my-portfolio#readme",
+  "homepage": "https://github.com/vickymarz/my-portfolio/index.html",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
