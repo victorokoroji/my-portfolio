@@ -66,7 +66,6 @@ li {
 img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 }
 
 header {
@@ -234,7 +233,7 @@ header {
 	background: var(--white);
 	border: 1px solid var(--very-light-blue);
 	border-radius: 16px;
-	margin: 50px auto;
+	margin: 30px auto;
 	padding: 16px;
 	display: flex;
 	flex-direction: column;
@@ -249,6 +248,10 @@ header {
 	line-height: 44px;
 	color: var(--navy-blue);
 	margin: 12px 0;
+}
+
+.project-img img{
+	height: 350px;
 }
 
 .project-author {
@@ -430,7 +433,7 @@ button:disabled {
 }
 
 .rotate-angle-icon {
-  	transform: rotate(-90deg);
+	transform: rotate(-90deg);
 	transition: all 1s ease-out;
 }
 
@@ -822,12 +825,7 @@ input.success {
 
 	.project-img {
 		flex: 1;
-    height: fit-content;
-	}
-
-	.project-img img {
-		object-fit: cover;
-		height: fit-content;
+		height: 350px;
 	}
 
 	.order .project-img {
