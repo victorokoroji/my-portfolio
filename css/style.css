@@ -233,7 +233,7 @@ header {
 	background: var(--white);
 	border: 1px solid var(--very-light-blue);
 	border-radius: 16px;
-	margin: 30px auto;
+	margin: 50px auto;
 	padding: 16px;
 	display: flex;
 	flex-direction: column;
