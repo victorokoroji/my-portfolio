@@ -18,7 +18,7 @@ const projectDatas = [
 		year: 2022,
 		description:
 			'Space Travelers Hub is a web application made for a company that provides commercial and scientific space travel services. The application allows users (future clients) to book rockets and join selected space missions.',
-		featuredImage: './assets/images/todolist.png',
+		featuredImage: '../assets/images/Screen-shoot.gif',
 		technologies: ['React', 'Redux', 'CSS'],
 		liveVersion: 'https://space-travellers-booking-app.herokuapp.com/',
 		source: 'https://github.com/vickymarz/space-travellers-hub',
@@ -54,10 +54,10 @@ const projectDatas = [
 		year: 2022,
 		description:
 			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-		featuredImage: './assets/images/Snapshoot-Portfolio-2.png',
+		featuredImage: '../assets/images/bookstore.png',
 		technologies: ['Redux', 'React', 'CSS'],
-		liveVersion: null,
-		source: null,
+		liveVersion: 'https://mybookstorewebapp.herokuapp.com/',
+		source: 'https://github.com/vickymarz/bookstore',
 	},
 ]
 
