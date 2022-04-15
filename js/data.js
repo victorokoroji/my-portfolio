@@ -59,6 +59,18 @@ const projectDatas = [
 		liveVersion: 'https://mybookstorewebapp.herokuapp.com/',
 		source: 'https://github.com/vickymarz/bookstore',
 	},
+	{
+		name: 'Portfolio',
+		author: 'OKOROJI VICTOR',
+		stack: 'Frontend Dev',
+		year: 2022,
+		description:
+			'This is my Portfolio website which keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer.',
+		featuredImage: '../assets/images/portfolio.png',
+		technologies: ['HTML', 'CSS', 'Javascript'],
+		liveVersion: 'https://victorokoroji.netlify.app/',
+		source: 'https://github.com/vickymarz/my-portfolio',
+	},
 ]
 
 document.querySelector('.works').innerHTML = projectDatas
@@ -104,7 +116,7 @@ document.querySelector('.modals').innerHTML = projectDatas
 	.map(
 		data => `
 <div class="modal">
-<div class="modal-container"> 
+<div class="modal-container">
   <div class="modal-title">
 <h2 class="project-title">${data.name}</h2>
     <div class="close">
@@ -153,15 +165,12 @@ alt="github icon" class="modal-img"
 
 // event listeners for opening modal on button click
 const modalButtons = Array.from(document.querySelectorAll('.btn'))
-console.log(modalButtons)
 const modals = Array.from(document.querySelectorAll('.modal'))
 
 const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]])
-console.log(modalButtonZip)
 modalButtonZip.forEach(pair => {
 	pair[0].addEventListener('click', () => {
 		pair[1].style.display = 'block'
-		console.log('click');
 	})
 })
 
@@ -173,3 +182,4 @@ document.querySelectorAll('.close').forEach(close => {
 		})
 	})
 })
+
