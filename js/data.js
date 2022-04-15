@@ -153,13 +153,15 @@ alt="github icon" class="modal-img"
 
 // event listeners for opening modal on button click
 const modalButtons = Array.from(document.querySelectorAll('.btn'))
+console.log(modalButtons)
 const modals = Array.from(document.querySelectorAll('.modal'))
 
 const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]])
-
+console.log(modalButtonZip)
 modalButtonZip.forEach(pair => {
 	pair[0].addEventListener('click', () => {
 		pair[1].style.display = 'block'
+		console.log('click');
 	})
 })
 
