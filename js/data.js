@@ -33,11 +33,11 @@ const projectDatas = [
 		source: 'https://github.com/vickymarz/todo-list',
 	},
 	{
-		name: 'Math-Magician',
+		name: 'Calculator App',
 		author: 'OKOROJI VICTOR',
 		stack: 'Frontend Dev',
 		year: 2022,
-		description: 'Math-Magician" is a web app for all lovers of mathematics. It is a Single Page Application that allows users to make simple calculations.',
+		description: 'Calculator App" is a web app for all lovers of mathematics. It is a Single Page Application that allows users to make simple calculations.',
 		featuredImage: './assets/images/calculator.png',
 		technologies: ['React', 'css', 'jest'],
 		liveVersion: 'https://math-magician-calculator.netlify.app/',
