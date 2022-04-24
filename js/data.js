@@ -122,7 +122,7 @@ document.querySelector('.modals').innerHTML = projectDatas
 <li>${data.stack}</li>
 <li>${data.year}</li>
 </ul>
-<div>
+<div class="project-img">
 <img
 src= ${data.featuredImage}
 class="snapshoot"
