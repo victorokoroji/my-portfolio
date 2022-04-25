@@ -29,7 +29,7 @@ const projectDatas = [
 		description: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
 		featuredImage: './assets/images/todolist.png',
 		technologies: ['html', 'css', 'javascript'],
-		liveVersion: 'https://vickymarz.github.io/todo-list/dist/',
+		liveVersion: 'https://bookshelve.netlify.app/',
 		source: 'https://github.com/vickymarz/todo-list',
 	},
 	{
