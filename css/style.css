@@ -472,16 +472,35 @@ button:disabled {
 
 .language-list li:nth-child(1)::before {
   padding: 5px 10px;
-  content: url(../assets/images/javascript.png);
+  content: url(../assets/images/ruby.png);
 }
 
 .language-list li:nth-child(2)::before {
-  content: url(../assets/images/html5.png);
   padding: 5px 10px;
+  content: url(../assets/images/sql.png);
 }
 
 .language-list li:nth-child(3)::before {
+  padding: 5px 10px;
+  content: url(../assets/images/postgres.png);
+}
+
+.language-list li:nth-child(4)::before {
+  padding: 5px 10px;
+  content: url(../assets/images/Typescript.jpg);
+}
+.language-list li:nth-child(5)::before {
+  padding: 5px 10px;
+  content: url(../assets/images/javascript.png);
+}
+
+.language-list li:nth-child(6)::before {
   content: url(../assets/images/css3.png);
+  padding: 5px 10px;
+}
+
+.language-list li:nth-child(7)::before {
+  content: url(../assets/images/html5.png);
   padding: 5px 10px;
 }
 
