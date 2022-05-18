@@ -219,6 +219,25 @@ header {
 }
 
 /* works section styling starts here */
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  gap: 10px;
+}
+
+.portfolio-title h2 {
+  font-size: 2rem;
+  color: var(--navy-blue);
+}
+
+.portfolio-title img {
+  mix-blend-mode: darken;
+  width: 20px;
+}
+
 .works {
   width: 90%;
   margin: auto;
@@ -818,7 +837,6 @@ input.success {
   /* works section styling starts here */
   .works {
     width: 80%;
-    margin-top: 132px;
   }
 
   .project {
