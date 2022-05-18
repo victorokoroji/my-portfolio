@@ -235,7 +235,7 @@ header {
 
 .portfolio-title img {
   mix-blend-mode: darken;
-  width: 20px;
+  width: 30px;
 }
 
 .works {
@@ -647,6 +647,25 @@ form ul li textarea:focus {
   z-index: 5;
   animation: modalopen 1s ease-out;
   display: none;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.top a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  gap: 5px;
+  align-items: center;
+}
+
+.top a i {
+  font-size: 1.5rem;
 }
 
 @keyframes modalopen {
