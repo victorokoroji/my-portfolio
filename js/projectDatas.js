@@ -87,17 +87,6 @@ const projectDatas = [
     liveVersion: 'https://mybookstorewebapp.herokuapp.com/',
     source: 'https://github.com/vickymarz/bookstore',
   },
-  {
-    name: 'Portfolio',
-    author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
-    year: 2022,
-    description: 'This is my Portfolio website built with HTML, CSS, and Javascript. This website keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer.',
-    featuredImage: '../assets/images/portfolio.png',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    liveVersion: 'https://victorokoroji.netlify.app/',
-    source: 'https://github.com/vickymarz/bookstore',
-  },
 ];
 
 export default projectDatas;
