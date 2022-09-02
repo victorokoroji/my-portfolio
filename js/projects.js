@@ -57,7 +57,7 @@ document.querySelector('.modals').innerHTML = projectDatas
 <li>${data.stack}</li>
 <li>${data.year}</li>
 </ul>
-<div class="project-img">
+<div class="project-img" id="modal-img">
 <img
 src= ${data.featuredImage}
 class="snapshoot"
@@ -74,8 +74,13 @@ alt="Tonic project image"
 </ul>
 <span></span>
 <div class="buttons">
-<a href="${data.liveVersion}" class="modal-button" target="_blank" rel="noopener noreferrer">See Live <img src="./assets/images/Icon.png" alt="live site icon" class="modal-img"/></a>
-<a href="${data.source}" class="modal-button" target="_blank" rel="noopener noreferrer">See Source <img src="./assets/images/github.png" alt="github icon" class="modal-img"/></a>
+<a href="${data.liveVersion}" class="modal-button" id="modal-btn1" target="_blank" rel="noopener noreferrer">
+<p>See Live</p>
+<img src="./assets/images/Icon.png" alt="live site icon" class="modal-img"/>
+</a>
+<a href="${data.source}" class="modal-button" id="modal-btn2" target="_blank" rel="noopener noreferrer">
+<p>See Source</p>
+<img src="./assets/images/github.png" alt="github icon" class="modal-img"/></a>
 </div>
 </div>
 </div>

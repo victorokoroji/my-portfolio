@@ -107,8 +107,7 @@ function toggleArrows() {
       if (pair[1].style.display === 'block' || pair[1].style.display === 'flex') {
         pair[1].style.display = 'none';
         pair[0].classList.add('rotate-angle-icon');
-      } else if (window.innerWidth > 992)
-      {
+      } else if (window.innerWidth > 992) {
         pair[1].style.display = 'flex';
         pair[0].classList.remove('rotate-angle-icon');
       } else {

@@ -139,6 +139,15 @@ header {
   font-size: 24px;
 }
 
+.top a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  gap: 5px;
+  align-items: center;
+}
+
 .nav-list {
   margin-top: 90px;
   margin-left: 28px;
@@ -376,6 +385,20 @@ button,
   cursor: pointer;
 }
 
+.close {
+  cursor: pointer;
+}
+
+#modal-btn1,
+#modal-btn2 {
+  font-size: 1rem;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+
 button:hover,
 .modal-button:hover {
   background-color: var(--primary-color);
@@ -514,6 +537,7 @@ button:disabled {
   padding: 5px 10px;
   content: url(../assets/images/Typescript.jpg);
 }
+
 .language-list li:nth-child(5)::before {
   padding: 5px 10px;
   content: url(../assets/images/javascript.png);
@@ -629,6 +653,7 @@ form ul li textarea:focus {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 #submit-btn:hover {
@@ -655,19 +680,15 @@ form ul li textarea:focus {
   display: none;
 }
 
+.modal-title i {
+  font-size: 20px;
+  color: var(--light-gray);
+}
+
 .top {
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
-}
-
-.top a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--white);
-  gap: 5px;
-  align-items: center;
 }
 
 .top a i {
@@ -697,11 +718,6 @@ form ul li textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.modal-title i {
-  font-size: 20px;
-  color: var(--light-gray);
 }
 
 .modal-description {
@@ -887,10 +903,16 @@ input.success {
 
   .project-img {
     flex: 1;
+    height: 350px;
+  }
+
+  #modal-img {
+    height: initial;
   }
 
   .project-img img {
-    height: initial;
+    height: 100%;
+    width: 100%;
   }
 
   .order .project-img {
@@ -1024,6 +1046,7 @@ input.success {
     margin-top: 27px;
     transform: translateX(100px);
     margin-bottom: 127px;
+    cursor: pointer;
   }
 
   .skill-list ul {
