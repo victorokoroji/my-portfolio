@@ -2,7 +2,7 @@ const projectDatas = [
   {
     name: 'Scotland Adventure',
     author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
+    stack: 'Front-End',
     year: 2022,
     description: 'This is a story telling web application that provides a platform for story tellers who want to share and document their adventures about several locations in Scotland, to post stories which may include text, photos, and multimedia about their experience.',
     featuredImage: './assets/images/scotland.png',
@@ -13,7 +13,7 @@ const projectDatas = [
   {
     name: 'Always Care',
     author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
+    stack: 'Full-Stack',
     year: 2022,
     description: 'Alwayscare" doctors appointment app is a software application that is especially meant to help patients manage and schedule appointments with the doctors or opt for a real-time chat.',
     featuredImage: './assets/images/alwayscare.png',
@@ -22,9 +22,20 @@ const projectDatas = [
     source: 'https://github.com/vickymarz/doctors-appointment-frontend',
   },
   {
+    name: 'Budget Manager',
+    author: 'OKOROJI VICTOR',
+    stack: 'Full-Stack',
+    year: 2022,
+    description: 'A Budget-app is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    featuredImage: './assets/images/budget.png',
+    technologies: ['Ruby on Rails', 'PostgreSQL', 'CSS'],
+    liveVersion: 'https://my-budget-manager.herokuapp.com/',
+    source: 'https://github.com/vickymarz/budget-app',
+  },
+  {
     name: 'Space Travelers Hub',
     author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
+    stack: 'Front-End',
     year: 2022,
     description: 'Space Travelers Hub is a web application made for a company that provides commercial and scientific space travel services. The application allows users (future clients) to book rockets and join selected space missions.',
     featuredImage: '../assets/images/Screen-shoot.gif',
@@ -35,7 +46,7 @@ const projectDatas = [
   {
     name: 'Todolist App',
     author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
+    stack: 'Front-End',
     year: 2022,
     description: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     featuredImage: './assets/images/todolist.png',
@@ -46,7 +57,7 @@ const projectDatas = [
   {
     name: 'Awesome Books',
     author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
+    stack: 'Front-End',
     year: 2022,
     description: 'This website is dedicated for users to be able to store there collection of books they would love to read or the books they are reading. They can add new books and delete existing books with ease.',
     featuredImage: './assets/images/awesomebooks.png',
@@ -57,7 +68,7 @@ const projectDatas = [
   {
     name: 'Calculator App',
     author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
+    stack: 'Front-End',
     year: 2022,
     description: 'Calculator App" is a web app for all lovers of mathematics. It is a Single Page Application that allows users to make simple calculations.',
     featuredImage: './assets/images/calculator.png',
@@ -68,7 +79,7 @@ const projectDatas = [
   {
     name: 'Makeup Data App',
     author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
+    stack: 'Front-End',
     year: 2022,
     description: 'This application shows information about a makeup product called "Foundation". It is built around an API to fetch the needed data. It can show information on a particular brand and type of foundations. This app helps to promote the business of makeups and enable users to select there desired makeup effortlessly.',
     featuredImage: '../assets/images/makeup.gif',
@@ -79,13 +90,24 @@ const projectDatas = [
   {
     name: 'Bookstore',
     author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack Dev',
+    stack: 'Front-End',
     year: 2022,
     description: 'This is a React application for managing books you want to read. It tracks your progress and makes the reading the books enlisted as a goal.',
     featuredImage: '../assets/images/bookstore.png',
     technologies: ['Redux', 'React', 'CSS'],
     liveVersion: 'https://mybookstorewebapp.herokuapp.com/',
     source: 'https://github.com/vickymarz/bookstore',
+  },
+  {
+    name: 'My Portfolio',
+    author: 'OKOROJI VICTOR',
+    stack: 'Front-End',
+    year: 2022,
+    description: 'This is my Portfolio website built with HTML, CSS, and Javascript. This website keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer.',
+    featuredImage: '../assets/images/portfolio.png',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveVersion: 'https://victorokoroji.netlify.app/',
+    source: 'https://github.com/vickymarz/my-portfolio',
   },
 ];
 
