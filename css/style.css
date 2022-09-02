@@ -385,6 +385,14 @@ button,
   cursor: pointer;
 }
 
+#resume {
+  color: var(--blue);
+}
+
+button:hover #resume {
+  color: var(--white);
+}
+
 .close {
   cursor: pointer;
 }
