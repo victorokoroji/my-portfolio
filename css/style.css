@@ -373,6 +373,7 @@ button,
   color: var(--blue);
   margin: 12px 0;
   background-color: var(--white);
+  cursor: pointer;
 }
 
 button:hover,
@@ -391,6 +392,11 @@ button:active,
 button:disabled {
   background-color: var(--white);
   color: var(--light-gray);
+}
+
+#intro-btn {
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 /* about section styling starts here */
