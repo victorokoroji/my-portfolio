@@ -1,26 +1,42 @@
 const projectDatas = [
   {
-    name: 'Scotland Adventure',
+    name: 'CatchUp App',
     author: 'OKOROJI VICTOR',
     stack: 'Front-End',
     year: 2022,
-    description: 'This is a story telling web application that provides a platform for story tellers who want to share and document their adventures about several locations in Scotland, to post stories which may include text, photos, and multimedia about their experience.',
-    featuredImage: './assets/images/scotland.png',
-    technologies: ['html', 'css', 'javascript'],
-    liveVersion: 'https://scotlandadventureapp.herokuapp.com',
-    source: 'https://github.com/vickymarz/scotland-adventures',
+    description: 'This is a web application that provides a platform for users to schedule hangout or events and invite there friends and/or family to participate in the event.',
+    featuredImage: './assets/images/catchup.png',
+    technologies: ['React', 'ContextApi', 'TailwindCSS'],
+    liveVersion: 'https://catchup.rsvp',
+    source: 'https://github.com/workshopapps/dinnerwithfriends.web',
   },
-  {
-    name: 'Always Care',
-    author: 'OKOROJI VICTOR',
-    stack: 'Full-Stack',
-    year: 2022,
-    description: 'Alwayscare" doctors appointment app is a software application that is especially meant to help patients manage and schedule appointments with the doctors or opt for a real-time chat.',
-    featuredImage: './assets/images/alwayscare.png',
-    technologies: ['React', 'Redux', 'Ruby on Rails'],
-    liveVersion: 'https://alwayscare.herokuapp.com/',
-    source: 'https://github.com/vickymarz/doctors-appointment-frontend',
-  },
+  // {
+  //   name: 'Scotland Adventure',
+  //   author: 'OKOROJI VICTOR',
+  //   stack: 'Front-End',
+  //   year: 2022,
+  //   description: 'This is a story telling web application that provides a platform for
+  //   story tellers who want to share and document their adventures about several locations in
+  // Scotland, to post stories which may
+  //  include text, photos, and multimedia about their experience.',
+  //   featuredImage: './assets/images/scotland.png',
+  //   technologies: ['html', 'css', 'javascript'],
+  //   liveVersion: 'https://scotlandadventureapp.herokuapp.com',
+  //   source: 'https://github.com/vickymarz/scotland-adventures',
+  // },
+  // {
+  //   name: 'Always Care',
+  //   author: 'OKOROJI VICTOR',
+  //   stack: 'Full-Stack',
+  //   year: 2022,
+  //   description: 'Alwayscare" doctors appointment app is a software application that
+  //  is especially meant to help patients manage and schedule appointments with the
+  //  doctors or opt for a real-time chat.',
+  //   featuredImage: './assets/images/alwayscare.png',
+  //   technologies: ['React', 'Redux', 'Ruby on Rails'],
+  //   liveVersion: 'https://alwayscare.herokuapp.com/',
+  //   source: 'https://github.com/vickymarz/doctors-appointment-frontend',
+  // },
   {
     name: 'Budget Manager',
     author: 'OKOROJI VICTOR',
@@ -29,7 +45,7 @@ const projectDatas = [
     description: 'A Budget-app is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
     featuredImage: './assets/images/budget.png',
     technologies: ['Ruby on Rails', 'PostgreSQL', 'CSS'],
-    liveVersion: 'https://my-budget-manager.herokuapp.com/',
+    liveVersion: 'https://my-budget-manager.onrender.com/',
     source: 'https://github.com/vickymarz/budget-app',
   },
   {
@@ -40,7 +56,7 @@ const projectDatas = [
     description: 'Space Travelers Hub is a web application made for a company that provides commercial and scientific space travel services. The application allows users (future clients) to book rockets and join selected space missions.',
     featuredImage: '../assets/images/space-travellers-hub.png',
     technologies: ['React', 'Redux', 'CSS'],
-    liveVersion: 'https://space-travellers-booking-app.herokuapp.com/',
+    liveVersion: 'https://space-travellers-booking.netlify.app/',
     source: 'https://github.com/vickymarz/space-travellers-hub',
   },
   {
@@ -95,20 +111,22 @@ const projectDatas = [
     description: 'This is a React application for managing books you want to read. It tracks your progress and makes the reading the books enlisted as a goal.',
     featuredImage: '../assets/images/bookstore.png',
     technologies: ['Redux', 'React', 'CSS'],
-    liveVersion: 'https://mybookstorewebapp.herokuapp.com/',
+    liveVersion: 'https://mybookstorewebapp.netlify.app/',
     source: 'https://github.com/vickymarz/bookstore',
   },
-  {
-    name: 'My Portfolio',
-    author: 'OKOROJI VICTOR',
-    stack: 'Front-End',
-    year: 2022,
-    description: 'This is my Portfolio website built with HTML, CSS, and Javascript. This website keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer.',
-    featuredImage: '../assets/images/portfolio.png',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    liveVersion: 'https://victorokoroji.netlify.app/',
-    source: 'https://github.com/vickymarz/my-portfolio',
-  },
+  // {
+  //   name: 'My Portfolio',
+  //   author: 'OKOROJI VICTOR',
+  //   stack: 'Front-End',
+  //   year: 2022,
+  //   description: 'This is my Portfolio website built with HTML, CSS, and Javascript. This website
+  // keeps track of all the projects I have worked on, including projects live versions and link
+  // to the code. This is a way for me to show what I can do as a software developer.',
+  //   featuredImage: '../assets/images/portfolio.png',
+  //   technologies: ['HTML', 'CSS', 'Javascript'],
+  //   liveVersion: 'https://victorokoroji.netlify.app/',
+  //   source: 'https://github.com/vickymarz/my-portfolio',
+  // },
 ];
 
 export default projectDatas;
