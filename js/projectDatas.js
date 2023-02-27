@@ -24,19 +24,17 @@ const projectDatas = [
   //   liveVersion: 'https://scotlandadventureapp.herokuapp.com',
   //   source: 'https://github.com/vickymarz/scotland-adventures',
   // },
-  // {
-  //   name: 'Always Care',
-  //   author: 'OKOROJI VICTOR',
-  //   stack: 'Full-Stack',
-  //   year: 2022,
-  //   description: 'Alwayscare" doctors appointment app is a software application that
-  //  is especially meant to help patients manage and schedule appointments with the
-  //  doctors or opt for a real-time chat.',
-  //   featuredImage: './assets/images/alwayscare.png',
-  //   technologies: ['React', 'Redux', 'Ruby on Rails'],
-  //   liveVersion: 'https://alwayscare.herokuapp.com/',
-  //   source: 'https://github.com/vickymarz/doctors-appointment-frontend',
-  // },
+  {
+    name: 'Always Care',
+    author: 'OKOROJI VICTOR',
+    stack: 'Full-Stack',
+    year: 2022,
+    description: 'Alwayscare doctors appointment app is a software application that is especially meant to help patients manage and schedule appointments with the doctors or opt for a real-time chat.',
+    featuredImage: './assets/images/alwayscare.png',
+    technologies: ['React', 'Redux', 'Ruby on Rails'],
+    liveVersion: 'https://doctors-appointment-app-2k1t.onrender.com/',
+    source: 'https://github.com/vickymarz/doctors-appointment-frontend',
+  },
   {
     name: 'Budget Manager',
     author: 'OKOROJI VICTOR',
@@ -114,19 +112,17 @@ const projectDatas = [
     liveVersion: 'https://mybookstorewebapp.netlify.app/',
     source: 'https://github.com/vickymarz/bookstore',
   },
-  // {
-  //   name: 'My Portfolio',
-  //   author: 'OKOROJI VICTOR',
-  //   stack: 'Front-End',
-  //   year: 2022,
-  //   description: 'This is my Portfolio website built with HTML, CSS, and Javascript. This website
-  // keeps track of all the projects I have worked on, including projects live versions and link
-  // to the code. This is a way for me to show what I can do as a software developer.',
-  //   featuredImage: '../assets/images/portfolio.png',
-  //   technologies: ['HTML', 'CSS', 'Javascript'],
-  //   liveVersion: 'https://victorokoroji.netlify.app/',
-  //   source: 'https://github.com/vickymarz/my-portfolio',
-  // },
+  {
+    name: 'My Portfolio',
+    author: 'OKOROJI VICTOR',
+    stack: 'Front-End',
+    year: 2022,
+    description: 'This is my Portfolio website built with HTML, CSS, and Javascript. This website keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer.',
+    featuredImage: '../assets/images/portfolio.png',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveVersion: 'https://victorokoroji.netlify.app/',
+    source: 'https://github.com/vickymarz/my-portfolio',
+  },
 ];
 
 export default projectDatas;
