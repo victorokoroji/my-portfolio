@@ -1,296 +1,240 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og:http://ogp.me/ns#">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="og:title" content="Victor Ebube Okoroji Portfolio" />
-		<meta name="image" property="og:image" content="./assets/images/portfolio.png" />
-		<meta name="author" content="Victor Ebube Okoroji" />
-		<meta
-			property="og:description"
-			content="This is my Portfolio website built with HTML, CSS, and Javascript. This website keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer."
-		/>
-		<meta property="og:url" content="https://victorokoroji.netlify.app/" />
-		<!-- stylesheet -->
-		<link rel="stylesheet" href="./css/style.css" />
-		<!-- fontawesome -->
-		<script src="https://kit.fontawesome.com/d31edfa6bf.js" crossorigin="anonymous"></script>
-		<!-- favicon -->
-		<link rel="icon" href="./assets/images/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
-		<link rel="manifest" href="./assets/images/site.webmanifest" />
-		<!-- google font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTNSEWQ2RY"></script>
-		<script>
-			window.dataLayer = window.dataLayer || []
-			function gtag() {
-				window.dataLayer.push(arguments)
-			}
-			gtag('js', new Date())
+<html lang="en">
 
-			gtag('config', 'G-WTNSEWQ2RY')
-		</script>
-		<!-- Project Title -->
-		<title>Okoroji Victor Portfolio Website</title>
-	</head>
-	<body>
-		<header id="home">
-			<a href="index.html" class="logo">Welcome!</a>
-			<nav class="hamburger">
-				<div class="menu-bar bars">
-					<i class="fa fa-bars fa-1x"></i>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Victor Ebube Okoroji Portfolio">
+	<meta name="image" property="og:image" content="./assets/images/portfolio.png">
+	<meta name="author" content="Victor Ebube Okoroji">
+	<meta property="og:description"
+		content="This is my Portfolio website built with HTML, CSS, and Javascript. This website keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer.">
+	<meta property="og:url" content="https://victorokoroji.netlify.app/">
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="./css/style.css" />
+	<!-- font-awesome -->
+	<script src="https://kit.fontawesome.com/d31edfa6bf.js" crossorigin="anonymous"></script>
+	<!-- favicon -->
+	<link rel="icon" href="./assets/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+	<link rel="manifest" href="./assets/images/site.webmanifest">
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap"
+		rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTNSEWQ2RY"></script>
+	<script>
+		window.dataLayer = window.dataLayer || []
+		function gtag() {
+			window.dataLayer.push(arguments)
+		}
+		gtag('js', new Date())
+
+		gtag('config', 'G-WTNSEWQ2RY')
+	</script>
+	<!-- Project Title -->
+	<title>Okoroji Victor Portfolio Website</title>
+</head>
+
+<body>
+	<header id="home">
+		<a href="index.html" class="logo">Welcome!</a>
+		<nav class="hamburger">
+			<div class="menu-bar bars">
+				<i class="fa fa-bars fa-1x"></i>
+			</div>
+			<div class="mobile-menu">
+				<div class="menu-bar times">
+					<i class="fa fa-times fa-1x"></i>
 				</div>
-				<div class="mobile-menu">
-					<div class="menu-bar times">
-						<i class="fa fa-times fa-1x"></i>
-					</div>
-					<ul class="nav-list">
-						<li>
-							<a href="#portfolio" class="menu-bar" id="portfolio-link">Portfolio</a>
-						</li>
-						<li>
-							<a href="#about" class="menu-bar" id="about-link">About</a>
-						</li>
-						<li>
-							<a href="#contact" class="menu-bar" id="contact-link">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-		<div class="divider"></div>
-		<section class="intro">
-			<div class="intro-content">
-				<h1
-					>I’m Victor <br />
-					Glad to see <span>you!</span>
-				</h1>
-				<p
-					>I’m a software developer! I can help you build a product , feature or website Look
-					through some of my work and experience! If you like what you see and have a project you
-					need coded, don’t hestiate to contact me.</p
-				>
-				<a href="#" class="connect">LET’S CONNECT</a>
-				<ul class="socials">
+				<ul class="nav-list">
 					<li>
-						<a
-							href="https://twitter.com/Vicky_marz"
-							class="icon"
-							target="_blank"
-							rel="noopener noreferrer"
-							><i class="fab fa-twitter fa-x"></i
-						></a>
+						<a href="#portfolio" class="menu-bar" id="portfolio-link">Portfolio</a>
 					</li>
 					<li>
-						<a
-							href="https://www.linkedin.com/in/victorebubeokoroji/"
-							class="icon"
-							target="_blank"
-							rel="noopener noreferrer"
-							><i class="fab fa-linkedin fa-fw"></i
-						></a>
+						<a href="#about" class="menu-bar" id="about-link">About</a>
 					</li>
 					<li>
-						<a
-							href="https://medium.com/@okorojiebube2"
-							class="icon"
-							target="_blank"
-							rel="noopener noreferrer"
-							><i class="fab fa-medium-m fa-fw"></i
-						></a>
-					</li>
-					<li>
-						<a
-							href="https://github.com/vickymarz"
-							class="icon"
-							target="_blank"
-							rel="noopener noreferrer"
-							><i class="fab fa-github fa-fw"></i
-						></a>
-					</li>
-					<li>
-						<a href="https://angel.co/u/vickymarz" class="icon" target="_blank" rel="noopener noreferrer"
-							><i class="fa fa-angellist fa-fw"></i
-						></a>
+						<a href="#contact" class="menu-bar" id="contact-link">Contact</a>
 					</li>
 				</ul>
-				<a href="#portfolio">
-					<button type="button" id="intro-btn">See my projects</button>
+			</div>
+		</nav>
+	</header>
+	<div class="divider"></div>
+	<section class="intro">
+		<div class="intro-content">
+			<h1>I’m Victor <br>
+				Glad to see <span>you!</span>
+			</h1>
+			<p>I’m a software developer! I can help you build a product , feature or website Look
+				through some of my work and experience! If you like what you see and have a project you
+				need coded, don’t hesitate to contact me.</p>
+			<a href="#" class="connect">LET’S CONNECT</a>
+			<ul class="socials">
+				<li>
+					<a href="https://twitter.com/Vicky_marz" class="icon" target="_blank" rel="noopener noreferrer"><i
+							class="fab fa-twitter fa-x"></i></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/victorebubeokoroji/" class="icon" target="_blank"
+						rel="noopener noreferrer"><i class="fab fa-linkedin fa-fw"></i></a>
+				</li>
+				<li>
+					<a href="https://medium.com/@okorojiebube2" class="icon" target="_blank"
+						rel="noopener noreferrer"><i class="fab fa-medium-m fa-fw"></i></a>
+				</li>
+				<li>
+					<a href="https://github.com/vickymarz" class="icon" target="_blank" rel="noopener noreferrer"><i
+							class="fab fa-github fa-fw"></i></a>
+				</li>
+				<li>
+					<a href="https://angel.co/u/vickymarz" class="icon" target="_blank" rel="noopener noreferrer"><i
+							class="fa fa-angellist fa-fw"></i></a>
+				</li>
+			</ul>
+			<a href="#portfolio">
+				<button type="button" id="intro-btn">See my projects</button>
+			</a>
+		</div>
+	</section>
+	<section id="portfolio">
+		<div class="portfolio-title">
+			<h2>My Projects</h2>
+			<img src="./assets//images//finger.png" alt="show projects" />
+		</div>
+		<div class="works"></div>
+	</section>
+	<section class="about" id="about">
+		<div class="about-container">
+			<div class="about-description">
+				<h2>About <br>
+					Myself</h2>
+				<p>Hello I’m a software developer! I can help you build a product , feature or website
+					Look through some of my work and experience! If you like what you see and have a project
+					you need coded, don’t hesitate to contact me.</p>
+				<h3 class="connect">LETS CONNECT</h3>
+				<ul class="socials">
+					<li>
+						<a href="https://twitter.com/Vicky_marz" class="icon"><i class="fab fa-twitter fa-x"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/victorebubeokoroji/" class="icon"><i
+								class="fab fa-linkedin fa-fw"></i></a>
+					</li>
+					<li>
+						<a href="https://medium.com/@okorojiebube2" class="icon"><i
+								class="fab fa-medium-m fa-fw"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/vickymarz" class="icon"><i class="fab fa-github fa-fw"></i></a>
+					</li>
+					<li>
+						<a href="https://angel.co/u/vickymarz" class="icon"><i class="fa fa-angellist fa-fw"></i></a>
+					</li>
+				</ul>
+				<button type="button">
+					<a href="https://docs.google.com/document/d/11PmV4FMSvy2E0F0JfQvDT-Q-SciQu4Y6X3T-q7JrziM/edit?usp=sharing"
+						target="_blank" rel="noopener noreferrer" id="resume">
+						Get my resume
+					</a>
+				</button>
+			</div>
+			<div class="skill-list">
+				<div class="languages">
+					<div class="skill-list-menu">
+						<p>Languages</p>
+						<div class="angle-icon">
+							<img src="./assets/images/Union.png" alt="arrow-right">
+						</div>
+					</div>
+					<ul class="language-list lists">
+						<li>Ruby</li>
+						<li>SQL</li>
+						<li>postgreSQL</li>
+						<li>Typescript</li>
+						<li>Javascript</li>
+						<li>CSS</li>
+						<li>HTML</li>
+					</ul>
+				</div>
+				<div class="frameworks">
+					<div class="skill-list-menu">
+						<p>Frameworks</p>
+						<div class="angle-icon">
+							<img src="./assets/images/Union.png" alt="arrow-right">
+						</div>
+					</div>
+					<ul class="framework-list lists">
+						<li>Bootstrap</li>
+						<li>React Js</li>
+					</ul>
+				</div>
+				<div class="skills">
+					<div class="skill-list-menu">
+						<p>Skills</p>
+						<div class="angle-icon">
+							<img src="./assets/images/Union.png" alt="arrow-right">
+						</div>
+					</div>
+					<ul class="soft-skill-list lists">
+						<li>Collaboration</li>
+						<li>Team Work</li>
+						<li>Problem Solving</li>
+						<li>Effective Communication</li>
+						<li>Willingness to Learn</li>
+						<li>Adaptability</li>
+						<li>Organization</li>
+						<li>Critical Thinking</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact" id="contact">
+		<div class="contact-container">
+			<h2>Contact me</h2>
+			<p>If you have an application you are interested in developing, a feature that you need
+				built or a project that needs coding. I’d love to help with it
+			</p>
+			<form action="https://formspree.io/f/mdobaojq" method="POST" id="form">
+				<ul>
+					<li class="form-element">
+						<input type="text" name="name" id="name" placeholder="Enter Your Name" maxlength="30"
+							required />
+					</li>
+					<li class="form-element">
+						<input type="email" name="email" id="email" placeholder="Enter a valid email" required />
+					</li>
+					<li class="form-element">
+						<textarea name="message" cols="30" rows="10" maxlength="500" id="description"
+							placeholder="Write your message here" required></textarea>
+					</li>
+				</ul>
+				<div class="validate">
+					<button type="submit" id="submit-btn">Get In Touch</button>
+					<small></small>
+				</div>
+			</form>
+			<div class="top">
+				<a href="#">
+					<i class="far fa-arrow-alt-circle-up"></i>
+					Top
 				</a>
 			</div>
-		</section>
-		<section id="portfolio">
-			<div class="portfolio-title">
-				<h2>My Projects</h2>
-				<img src="./assets//images//finger.png" alt="show projects" />
-			</div>
-			<div class="works"></div>
-		</section>
-		<section class="about" id="about">
-			<div class="about-container">
-				<div class="about-description">
-					<h2
-						>About <br />
-						Myself</h2
-					>
-					<p
-						>Hello I’m a software developer! I can help you build a product , feature or website
-						Look through some of my work and experience! If you like what you see and have a project
-						you need coded, don’t hestiate to contact me.</p
-					>
-					<h3 class="connect">LETS CONNECT</h3>
-					<ul class="socials">
-						<li>
-							<a href="https://twitter.com/Vicky_marz" class="icon"
-								><i class="fab fa-twitter fa-x"></i
-							></a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/victorebubeokoroji/" class="icon"
-								><i class="fab fa-linkedin fa-fw"></i
-							></a>
-						</li>
-						<li>
-							<a href="https://medium.com/@okorojiebube2" class="icon"
-								><i class="fab fa-medium-m fa-fw"></i
-							></a>
-						</li>
-						<li>
-							<a href="https://github.com/vickymarz" class="icon"
-								><i class="fab fa-github fa-fw"></i
-							></a>
-						</li>
-						<li>
-							<a href="https://angel.co/u/vickymarz" class="icon"
-								><i class="fa fa-angellist fa-fw"></i
-							></a>
-						</li>
-					</ul>
-					<button type="button">
-						<a href="https://docs.google.com/document/d/11PmV4FMSvy2E0F0JfQvDT-Q-SciQu4Y6X3T-q7JrziM/edit?usp=sharing"
-						 target="_blank" rel="noopener noreferrer" id="resume">
-							Get my resume
-						</a>
-					</button>
-				</div>
-				<div class="skill-list">
-					<div class="languages">
-						<div class="skill-list-menu">
-							<p>Languages</p>
-							<div class="angle-icon">
-								<img src="./assets/images/Union.png" alt="arrow-right" />
-							</div>
-						</div>
-						<ul class="language-list lists">
-							<li>Ruby</li>
-							<li>SQL</li>
-							<li>postgreSQL</li>
-							<li>Typescript</li>
-							<li>Javascript</li>
-							<li>CSS</li>
-							<li>HTML</li>
-						</ul>
-					</div>
-					<div class="frameworks">
-						<div class="skill-list-menu">
-							<p>Frameworks</p>
-							<div class="angle-icon">
-								<img src="./assets/images/Union.png" alt="arrow-right" />
-							</div>
-						</div>
-						<ul class="framework-list lists">
-							<li>Bootstrap</li>
-							<li>React Js</li>
-						</ul>
-					</div>
-					<div class="skills">
-						<div class="skill-list-menu">
-							<p>Skills</p>
-							<div class="angle-icon">
-								<img src="./assets/images/Union.png" alt="arrow-right" />
-							</div>
-						</div>
-						<ul class="soft-skill-list lists">
-							<li>Collaboration</li>
-							<li>Team Work</li>
-							<li>Problem Solving</li>
-							<li>Effective Communication</li>
-							<li>Willingness to Learn</li>
-							<li>Adaptability</li>
-							<li>Organisation</li>
-							<li>Critical Thinking</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="contact" id="contact">
-			<div class="contact-container">
-				<h2>Contact me</h2>
-				<p
-					>If you have an application you are interested in developing, a feature that you need
-					built or a project that needs coding. I’d love to help with it
-				</p>
-				<form action="https://formspree.io/f/mdobaojq" method="POST" id="form">
-					<ul>
-						<li class="form-element">
-							<input
-								type="text"
-								name="name"
-								id="name"
-								placeholder="Enter Your Name"
-								maxlength="30"
-								required
-							/>
-						</li>
-						<li class="form-element">
-							<input
-								type="email"
-								name="email"
-								id="email"
-								placeholder="Enter a valid email"
-								required
-							/>
-						</li>
-						<li class="form-element">
-							<textarea
-								name="message"
-								cols="30"
-								rows="10"
-								maxlength="500"
-								id="description"
-								placeholder="Write your message here"
-								required
-							></textarea>
-						</li>
-					</ul>
-					<div class="validate">
-						<button type="submit" id="submit-btn">Get In Touch</button>
-						<small></small>
-					</div>
-				</form>
-				<div class="top">
-					<a href="#">
-						<i class="far fa-arrow-alt-circle-up"></i>
-						Top
-					</a>
-				</div>
-			</div>
-		</section>
-		<section class="modals"></section>
-		<script src="./js/projects.js" type="module"></script>
-		<script src="./js/index.js"></script>
-		<script src="./js/localStorage.js"></script>
-		<script src="./js/validate.js"></script>
-	</body>
+		</div>
+	</section>
+	<section class="modals"></section>
+	<script src="./js/projects.js" type="module"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/localStorage.js"></script>
+	<script src="./js/validate.js"></script>
+</body>
+
 </html>
