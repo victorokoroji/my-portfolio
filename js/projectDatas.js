@@ -10,6 +10,17 @@ const projectDatas = [
     liveVersion: 'https://catchup.rsvp',
     source: 'https://github.com/workshopapps/dinnerwithfriends.web',
   },
+  {
+    name: 'Pipsgod Academy',
+    author: 'OKOROJI VICTOR',
+    stack: 'Front-End',
+    year: 2022,
+    description: 'This is an online learning platform for users interested in learning FOREX trading, This website is built with comprehensive courses from the basics of forex market to advanced trading strategies.',
+    featuredImage: './assets/images/pipsgod.png',
+    technologies: ['React-Typescript', 'React-query', 'TailwindCSS'],
+    liveVersion: 'https://pipsgod.netlify.app',
+    source: 'https://github.com/vickymarz/pips-god',
+  },
   // {
   //   name: 'Scotland Adventure',
   //   author: 'OKOROJI VICTOR',
@@ -112,17 +123,17 @@ const projectDatas = [
     liveVersion: 'https://mybookstorewebapp.netlify.app/',
     source: 'https://github.com/vickymarz/bookstore',
   },
-  {
-    name: 'My Portfolio',
-    author: 'OKOROJI VICTOR',
-    stack: 'Front-End',
-    year: 2022,
-    description: 'This is my Portfolio website built with HTML, CSS, and Javascript. This website keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer.',
-    featuredImage: '../assets/images/portfolio.png',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    liveVersion: 'https://victorokoroji.netlify.app/',
-    source: 'https://github.com/vickymarz/my-portfolio',
-  },
+  // {
+  //   name: 'My Portfolio',
+  //   author: 'OKOROJI VICTOR',
+  //   stack: 'Front-End',
+  //   year: 2022,
+  //   description: 'This is my Portfolio website built with HTML, CSS, and Javascript. This website keeps track of all the projects I have worked on, including projects live versions and link to the code. This is a way for me to show what I can do as a software developer.',
+  //   featuredImage: '../assets/images/portfolio.png',
+  //   technologies: ['HTML', 'CSS', 'Javascript'],
+  //   liveVersion: 'https://victorokoroji.netlify.app/',
+  //   source: 'https://github.com/vickymarz/my-portfolio',
+  // },
 ];
 
 export default projectDatas;

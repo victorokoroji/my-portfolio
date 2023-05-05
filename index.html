@@ -46,11 +46,11 @@
 	<header id="home">
 		<a href="index.html" class="logo">Welcome!</a>
 		<nav class="hamburger">
-			<div class="menu-bar bars">
+			<div class="menu-bar bars" tabindex="0" role="button" aria-haspopup="menu">
 				<i class="fa fa-bars fa-1x"></i>
 			</div>
 			<div class="mobile-menu">
-				<div class="menu-bar times">
+				<div class="menu-bar times" tabindex="0" role="button" aria-haspopup="menu">
 					<i class="fa fa-times fa-1x"></i>
 				</div>
 				<ul class="nav-list">
@@ -99,8 +99,8 @@
 							class="fa fa-angellist fa-fw"></i></a>
 				</li>
 			</ul>
-			<a href="#portfolio">
-				<button type="button" id="intro-btn">See my projects</button>
+			<a href="#portfolio" id="intro-btn">
+				See my projects
 			</a>
 		</div>
 	</section>
@@ -139,12 +139,10 @@
 						<a href="https://angel.co/u/vickymarz" class="icon"><i class="fa fa-angellist fa-fw"></i></a>
 					</li>
 				</ul>
-				<button type="button">
-					<a href="https://docs.google.com/document/d/11PmV4FMSvy2E0F0JfQvDT-Q-SciQu4Y6X3T-q7JrziM/edit?usp=sharing"
-						target="_blank" rel="noopener noreferrer" id="resume">
-						Get my resume
-					</a>
-				</button>
+				<a href="https://docs.google.com/document/d/11PmV4FMSvy2E0F0JfQvDT-Q-SciQu4Y6X3T-q7JrziM/edit?usp=sharing"
+					target="_blank" rel="noopener noreferrer" id="resume">
+					Get my resume
+				</a>
 			</div>
 			<div class="skill-list">
 				<div class="languages">
@@ -206,11 +204,15 @@
 			<form action="https://formspree.io/f/mdobaojq" method="POST" id="form">
 				<ul>
 					<li class="form-element">
-						<input type="text" name="name" id="name" placeholder="Enter Your Name" maxlength="30"
-							required>
+						<label for="name">
+							<input type="text" name="name" id="name" placeholder="Enter Your Name" maxlength="30"
+								required>
+						</label>
 					</li>
 					<li class="form-element">
-						<input type="email" name="email" id="email" placeholder="Enter a valid email" required>
+						<label for="email">
+							<input type="email" name="email" id="email" placeholder="Enter a valid email" required>
+						</label>
 					</li>
 					<li class="form-element">
 						<textarea name="message" cols="30" rows="10" maxlength="500" id="description"

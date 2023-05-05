@@ -216,7 +216,8 @@ header {
   align-items: center;
   width: 170.17px;
   height: 20px;
-  margin: 12px 0;
+  padding-top: 12px;
+  padding-bottom: 36px;
 }
 
 .socials li {
@@ -370,7 +371,9 @@ form ul li:not(:last-child) {
 }
 
 button,
-.modal-button {
+.modal-button,
+#resume,
+#intro-btn {
   padding: 12px;
   border: 1px solid var(--primary-color);
   border-radius: 8px;
@@ -389,7 +392,8 @@ button,
   color: var(--blue);
 }
 
-button:hover #resume {
+#resume:hover,
+#intro-btn:hover {
   color: var(--white);
 }
 
@@ -408,19 +412,25 @@ button:hover #resume {
 }
 
 button:hover,
-.modal-button:hover {
+.modal-button:hover,
+#resume:hover,
+#intro-btn:hover {
   background-color: var(--primary-color);
   color: var(--white);
   box-shadow: 0 8px 16px 0 var(--very-lighter-blue);
 }
 
 button:active,
-.modal-button:active {
+.modal-button:active,
+#intro-btn:active,
+#resume:active  {
   background-color: var(--deep-blue);
   color: var(--white);
 }
 
-button:disabled {
+button:disabled,
+#intro-btn:disabled,
+#resume:disabled {
   background-color: var(--white);
   color: var(--light-gray);
 }
@@ -946,7 +956,9 @@ input.success {
     margin-top: 24px;
   }
 
-  button {
+  button,
+  #resume,
+  #intro-btn {
     margin: 36px 0;
   }
 
