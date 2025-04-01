@@ -1,6 +1,6 @@
-import projectDatas from './projectDatas.js';
+import projectDatas from "./projectDatas.js";
 
-document.querySelector('.works').innerHTML = projectDatas
+document.querySelector(".works").innerHTML = projectDatas
   .map(
     (data) => `
     <section class="project">
@@ -29,19 +29,19 @@ alt="Tonic project image"
 <button type="button" class="btn">See Project</button>
 </div>
 </section>
-    `,
+    `
   )
-  .join('');
+  .join("");
 
 for (let i = 0; i <= projectDatas.length; i += 1) {
   if (i % 2 === 1) {
-    document.querySelectorAll('.project')[i].classList.add('order');
+    document.querySelectorAll(".project")[i].classList.add("order");
   }
 }
 
 // modals user interface
 
-document.querySelector('.modals').innerHTML = projectDatas
+document.querySelector(".modals").innerHTML = projectDatas
   .map(
     (data) => `
 <div class="modal">
@@ -74,37 +74,44 @@ alt="Tonic project image"
 </ul>
 <span></span>
 <div class="buttons">
-<a href="${data.liveVersion}" class="modal-button" id="modal-btn1" target="_blank" rel="noopener noreferrer">
+<a href="${
+      data.liveVersion
+    }" class="modal-button" id="modal-btn1" target="_blank" rel="noopener noreferrer">
 <p>See Live</p>
 <img src="./assets/images/Icon.png" alt="live site icon" class="modal-img"/>
 </a>
-<a href="${data.source}" class="modal-button" id="modal-btn2" target="_blank" rel="noopener noreferrer">
+${
+  data.source === null
+    ? ""
+    : `<a href="${data.source}" class="modal-button" id="modal-btn2" target="_blank" rel="noopener noreferrer">
 <p>See Source</p>
-<img src="./assets/images/github.png" alt="github icon" class="modal-img"/></a>
+<img src="./assets/images/github.png" alt="github icon" class="modal-img"/></a>`
+}
+
 </div>
 </div>
 </div>
 </div>
-</div>`,
+</div>`
   )
-  .join('');
+  .join("");
 
 // event listeners for opening modal on button click
-const modalButtons = Array.from(document.querySelectorAll('.btn'));
-const modals = Array.from(document.querySelectorAll('.modal'));
+const modalButtons = Array.from(document.querySelectorAll(".btn"));
+const modals = Array.from(document.querySelectorAll(".modal"));
 
 const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]]);
 modalButtonZip.forEach((pair) => {
-  pair[0].addEventListener('click', () => {
-    pair[1].style.display = 'block';
+  pair[0].addEventListener("click", () => {
+    pair[1].style.display = "block";
   });
 });
 
 // event listener for closing modal on button click
-document.querySelectorAll('.close').forEach((close) => {
-  close.addEventListener('click', () => {
-    document.querySelectorAll('.modal').forEach((modal) => {
-      modal.style.display = 'none';
+document.querySelectorAll(".close").forEach((close) => {
+  close.addEventListener("click", () => {
+    document.querySelectorAll(".modal").forEach((modal) => {
+      modal.style.display = "none";
     });
   });
 });

@@ -170,18 +170,18 @@ const projectDatas = [
   //   liveVersion: 'https://victorokoroji.netlify.app/',
   //   source: 'https://github.com/vickymarz/my-portfolio',
   // },
-  {
-    name: "Always Care",
-    author: "OKOROJI VICTOR",
-    stack: "Full-Stack",
-    year: 2022,
-    description:
-      "Alwayscare doctors appointment app is a software application that is especially meant to help patients manage and schedule appointments with the doctors or opt for a real-time chat.",
-    featuredImage: "./assets/images/alwayscare.png",
-    technologies: ["React", "Redux", "Ruby on Rails"],
-    liveVersion: "https://doctors-appointment-app-2k1t.onrender.com/",
-    source: "https://github.com/vickymarz/doctors-appointment-frontend",
-  },
+  // {
+  //   name: "Always Care",
+  //   author: "OKOROJI VICTOR",
+  //   stack: "Full-Stack",
+  //   year: 2022,
+  //   description:
+  //     "Alwayscare doctors appointment app is a software application that is especially meant to help patients manage and schedule appointments with the doctors or opt for a real-time chat.",
+  //   featuredImage: "./assets/images/alwayscare.png",
+  //   technologies: ["React", "Redux", "Ruby on Rails"],
+  //   liveVersion: "https://doctors-appointment-app-2k1t.onrender.com/",
+  //   source: "https://github.com/vickymarz/doctors-appointment-frontend",
+  // },
 ];
 
 export default projectDatas;
