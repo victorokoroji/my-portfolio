@@ -44,7 +44,7 @@ const projectDatas = [
       "This is a web application that provides a platform for users to schedule hangout or events and invite there friends and/or family to participate in the event.",
     featuredImage: "./assets/images/catchup.png",
     technologies: ["React", "ContextApi", "TailwindCSS"],
-    liveVersion: "https://catchup.rsvp",
+    liveVersion: "https://catchups.netlify.app/",
     source: "https://github.com/workshopapps/dinnerwithfriends.web",
   },
   {

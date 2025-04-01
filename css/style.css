@@ -573,12 +573,17 @@ button:disabled,
 
 .framework-list li:nth-child(1)::before {
   padding: 5px 10px;
-  content: url(../assets/images/bootstrap.png);
+  content: url(../assets/images/tailwind.png);
 }
 
 .framework-list li:nth-child(2)::before {
   padding: 5px 10px;
   content: url(../assets/images/reactjs.png);
+}
+.framework-list li:nth-child(3)::before {
+  padding: 5px 10px;
+  content: url(../assets/images/nextjs.png);
+
 }
 
 /* contact section styling starts here */
