@@ -15,7 +15,7 @@ const projectDatas = [
     name: "Hydrogen Payroll",
     author: "OKOROJI VICTOR",
     stack: "Front-End",
-    year: 2024,
+    year: 2023,
     description:
       "Hydrogen Payroll is a payroll management system that helps organizations manage their payroll processes efficiently and accurately. It automates calculations, tax deductions, and generates payslips for employees, ensuring compliance with labor laws and regulations.",
     featuredImage: "./assets/images/payroll.png",
@@ -27,7 +27,7 @@ const projectDatas = [
     name: "HydrogenHR",
     author: "OKOROJI VICTOR",
     stack: "Front-End",
-    year: 2024,
+    year: 2023,
     description:
       "HydrogenHR is a human resource management system that helps organizations manage their employee data, recruitment processes, performance evaluations, and other HR-related tasks efficiently. It streamlines HR operations and enhances employee engagement.",
     featuredImage: "./assets/images/hr.png",
@@ -73,18 +73,7 @@ const projectDatas = [
   //   liveVersion: 'https://scotlandadventureapp.herokuapp.com',
   //   source: 'https://github.com/vickymarz/scotland-adventures',
   // },
-  {
-    name: "Always Care",
-    author: "OKOROJI VICTOR",
-    stack: "Full-Stack",
-    year: 2022,
-    description:
-      "Alwayscare doctors appointment app is a software application that is especially meant to help patients manage and schedule appointments with the doctors or opt for a real-time chat.",
-    featuredImage: "./assets/images/alwayscare.png",
-    technologies: ["React", "Redux", "Ruby on Rails"],
-    liveVersion: "https://doctors-appointment-app-2k1t.onrender.com/",
-    source: "https://github.com/vickymarz/doctors-appointment-frontend",
-  },
+
   {
     name: "Camotea app",
     author: "OKOROJI VICTOR",
@@ -97,18 +86,7 @@ const projectDatas = [
     liveVersion: "https://camotea.netlify.app/",
     source: "https://github.com/vickymarz/cameo-tea",
   },
-  {
-    name: "Budget Manager",
-    author: "OKOROJI VICTOR",
-    stack: "Full-Stack",
-    year: 2022,
-    description:
-      "A Budget-app is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
-    featuredImage: "./assets/images/budget.png",
-    technologies: ["Ruby on Rails", "PostgreSQL", "CSS"],
-    liveVersion: "https://my-budget-manager.onrender.com/",
-    source: "https://github.com/vickymarz/budget-app",
-  },
+
   {
     name: "Space Travelers Hub",
     author: "OKOROJI VICTOR",
@@ -169,6 +147,18 @@ const projectDatas = [
     liveVersion: "https://mybookstorewebapp.netlify.app/",
     source: "https://github.com/vickymarz/bookstore",
   },
+  {
+    name: "Budget Manager",
+    author: "OKOROJI VICTOR",
+    stack: "Full-Stack",
+    year: 2022,
+    description:
+      "A Budget-app is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+    featuredImage: "./assets/images/budget.png",
+    technologies: ["Ruby on Rails", "PostgreSQL", "CSS"],
+    liveVersion: "https://my-budget-manager.onrender.com/",
+    source: "https://github.com/vickymarz/budget-app",
+  },
   // {
   //   name: 'My Portfolio',
   //   author: 'OKOROJI VICTOR',
@@ -180,6 +170,18 @@ const projectDatas = [
   //   liveVersion: 'https://victorokoroji.netlify.app/',
   //   source: 'https://github.com/vickymarz/my-portfolio',
   // },
+  {
+    name: "Always Care",
+    author: "OKOROJI VICTOR",
+    stack: "Full-Stack",
+    year: 2022,
+    description:
+      "Alwayscare doctors appointment app is a software application that is especially meant to help patients manage and schedule appointments with the doctors or opt for a real-time chat.",
+    featuredImage: "./assets/images/alwayscare.png",
+    technologies: ["React", "Redux", "Ruby on Rails"],
+    liveVersion: "https://doctors-appointment-app-2k1t.onrender.com/",
+    source: "https://github.com/vickymarz/doctors-appointment-frontend",
+  },
 ];
 
 export default projectDatas;
