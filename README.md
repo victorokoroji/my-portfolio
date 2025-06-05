@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/vickymarz)
 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/okoroji-victor-ebube-8791741a0)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victorebubeokoroji)
 
 
 ## 🤝 Contributing
